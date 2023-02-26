@@ -1,0 +1,317 @@
+
+/*HERO SECTION START*/
+
+
+.hero-wrapper{
+  
+}
+
+.hero_info{
+  
+}
+
+.hero-title h1{
+  font-size:48px;
+  font-family: Montserrat;
+  padding-left:5%;
+}
+
+.hero-tekst p{
+  font-size:24px;
+  font-family: Outfit;
+  padding-left:5%;
+  color:#3C9FE1;
+}
+
+.hero-btn button{
+  font-size:24px;
+  font-family: Roboto;
+  width:280px;
+  border-radius:30px;
+  background-color:#3C9FE1;
+}
+
+.hero-link{
+  
+}
+
+.hero-link a:link{
+  text-decoration: none;
+  color:#3C9FE1;
+}
+
+.hero-link a:link:hover{
+  color:black;
+  font-weight: bold;
+  letter-spacing:1px;
+}
+
+
+.hero-video{
+
+}
+
+.video-wrapper{
+
+}
+
+
+video{
+  object-fit: cover;
+}
+
+
+
+/*HERO SECTION ENDS*/
+
+
+////////
+///////////////
+///////
+
+
+/*MERE VÆRDI SECTION START*/
+
+.card-shadow {
+
+}
+
+.værdi-body{
+  
+}
+
+.valuecard-komponent{
+  
+  
+}
+
+Card .card-imgage{
+  
+
+}
+
+.valuecard-link a:link{
+  text-decoration:none;
+  color:#3C9FE1;
+}
+
+.valuecard-link a:link:hover{
+  color:black;
+  font-weight: bold;
+  letter-spacing:1px;
+}
+
+.valuetitletekst {
+  color:black;
+  font-size:20px;
+  font-family: Outfit;
+}
+
+.valuetitletekst h4 {
+  font-size:32px;
+  font-family: Montserrat;
+  color:#3C9FE1;
+}
+
+
+.read-or-hide{
+  color:#3C9FE1;
+  cursor: pointer;
+  z-index:1;
+  float:right;
+  margin-top:3%;
+  margin-right:5%;
+  padding-left:3%;
+}
+
+.read-or-hide:hover{
+  color:black;
+  cursor:pointer;
+}
+
+/*MERE VÆRDI SECTION ENDS*/
+
+
+////////
+///////////////
+///////
+
+
+/* USER CASE STARTS*/
+
+.usercase-wrapper1 {
+
+}
+
+.usercase-wrapper2 {
+  
+}
+
+.usercase-info h4 {
+  font-size:32px;
+  font-family: Montserrat;
+  color:#3C9FE1;
+}
+
+
+.usercase-info p{
+  color:black;
+  font-size:20px;
+  font-family: Outfit;
+}
+
+/*USER CASE ENDS*/
+
+
+////////
+///////////////
+///////
+
+
+/*BOARD OF SCIENTIST START*/
+
+.scientistcard-footer {
+
+}
+
+.scientist-info h4{
+  margin-bottom:20px;
+}
+
+.scientistcard-link a {
+  color:white;
+}
+
+.scientistcard-link a:hover {
+  color:black;
+}
+
+.scientistcard-link a:link{
+  margin-top:20px;
+  text-decoration:none;
+}
+
+.scientistcard-link a:link:hover{
+  font-weight: bold;
+  letter-spacing:1px;
+}
+
+
+/*BOARD OF SCIENTIST START*/
+
+
+////////
+///////////////
+///////
+
+
+/*CUSTOMER SUCCESS START*/
+
+.custom-titel {
+
+}
+
+.custom-komponent {
+  margin-bottom:3%;
+  margin-top:10%;
+}
+
+.customer-wrapper{
+  
+}
+
+.customer-tekst p{
+  color:red;
+}
+
+.customer-wrapper h4{
+  font-size:25px;
+  font-family:Montserrat;
+}
+
+.customer-wrapper h5{
+  font-size:20px;
+  color:black;
+  font-family:Montserrat;
+}
+
+.customer-wrapper p{
+  color:Black;
+  font-weight:bold;
+  font-size:16px;
+  font-family:Outfit;
+}
+
+
+/*CUSTOMER SUCCESS ENDS*/
+
+
+////////
+///////////////
+///////
+
+
+/*SUBSCRIBER STARTS*/
+
+.sub-form input {
+
+}
+
+.subscriber-form input {
+  border:orange solid 1px;
+}
+
+
+
+/*SUBSCRIBER ENDS*/
+
+
+////////
+///////////////
+///////
+
+
+/*KONTAKT OS EMAIL MODAL START*/
+
+
+
+
+
+/*KONTAKT OS EMAIL MODAL START*/
+
+
+////////
+///////////////
+///////
+
+
+/*MEDIA QUERIES START*/
+
+
+  @media screen and (max-width: 968px) {
+    .title_tekst h2 {
+      
+    }
+  }
+
+
+  @media screen and (max-width: 668px) {
+    .title_tekst h2 {
+    
+    }
+    .title_tekst h1 span{
+      
+    }
+    .title_tekst h1 span span {
+    
+    }
+    .title_tekst h1:hover {
+  
+    }
+    .title_section hr{
+    
+    }
+  }
+
+
+  /*MEDIA QUERIES ENDS*/
