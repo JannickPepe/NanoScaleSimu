@@ -1,5 +1,5 @@
 
-/*HERO SECTION START*/
+/////// HERO SECTION START
 
 
 .hero-wrapper{
@@ -62,7 +62,7 @@ video{
 
 
 
-/*HERO SECTION ENDS*/
+////// HERO SECTION ENDS
 
 
 ////////
@@ -70,7 +70,7 @@ video{
 ///////
 
 
-/*MERE VÆRDI SECTION START*/
+///// MERE VÆRDI SECTION START
 
 .card-shadow {
 
@@ -129,7 +129,7 @@ Card .card-imgage{
   cursor:pointer;
 }
 
-/*MERE VÆRDI SECTION ENDS*/
+//// MERE VÆRDI SECTION ENDS 
 
 
 ////////
@@ -137,7 +137,7 @@ Card .card-imgage{
 ///////
 
 
-/* USER CASE STARTS*/
+////// USER CASE STARTS
 
 .usercase-wrapper1 {
 
@@ -160,7 +160,7 @@ Card .card-imgage{
   font-family: Outfit;
 }
 
-/*USER CASE ENDS*/
+///// USER CASE ENDS
 
 
 ////////
@@ -168,7 +168,7 @@ Card .card-imgage{
 ///////
 
 
-/*BOARD OF SCIENTIST START*/
+////// BOARD OF SCIENTIST START
 
 .scientistcard-footer {
 
@@ -197,7 +197,7 @@ Card .card-imgage{
 }
 
 
-/*BOARD OF SCIENTIST START*/
+////// BOARD OF SCIENTIST START
 
 
 ////////
@@ -205,7 +205,7 @@ Card .card-imgage{
 ///////
 
 
-/*CUSTOMER SUCCESS START*/
+///// CUSTOMER SUCCESS START
 
 .custom-titel {
 
@@ -243,7 +243,7 @@ Card .card-imgage{
 }
 
 
-/*CUSTOMER SUCCESS ENDS*/
+//// CUSTOMER SUCCESS ENDS
 
 
 ////////
@@ -251,7 +251,7 @@ Card .card-imgage{
 ///////
 
 
-/*SUBSCRIBER STARTS*/
+///// SUBSCRIBER STARTS
 
 .sub-form input {
 
@@ -263,7 +263,7 @@ Card .card-imgage{
 
 
 
-/*SUBSCRIBER ENDS*/
+///// SUBSCRIBER ENDS
 
 
 ////////
@@ -271,13 +271,13 @@ Card .card-imgage{
 ///////
 
 
-/*KONTAKT OS EMAIL MODAL START*/
+///// KONTAKT OS EMAIL MODAL START
 
 
 
 
 
-/*KONTAKT OS EMAIL MODAL START*/
+////// KONTAKT OS EMAIL MODAL START
 
 
 ////////
@@ -285,7 +285,7 @@ Card .card-imgage{
 ///////
 
 
-/*MEDIA QUERIES START*/
+///// MEDIA QUERIES START
 
 
   @media screen and (max-width: 968px) {
