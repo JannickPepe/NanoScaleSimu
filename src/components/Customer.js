@@ -62,7 +62,7 @@ const Customer = () => {
                             <div className="custom-dato mx-4">
                                 <div className="mx-2">
                                     <p className="text-light">Dato: {new Date(customer.Dato.seconds * 1000).toLocaleDateString("dk-EU")}
-</p>
+                                    </p>
                                 </div>
                             </div>
                             </div>
