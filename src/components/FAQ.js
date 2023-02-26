@@ -8,7 +8,7 @@ import '../styles/Home.css';
 
 const FAQ = () => {
 
-    /*console.log(faq, newData);*/
+    
     // State to store data todos
     const [faq, setFaq] = useState([]);
 

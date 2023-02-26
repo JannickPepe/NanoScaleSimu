@@ -1,5 +1,4 @@
 
-/////// HERO SECTION START
 
 
 .hero-wrapper{
@@ -62,15 +61,7 @@ video{
 
 
 
-////// HERO SECTION ENDS
 
-
-////////
-///////////////
-///////
-
-
-///// MERE VÆRDI SECTION START
 
 .card-shadow {
 
@@ -129,15 +120,7 @@ Card .card-imgage{
   cursor:pointer;
 }
 
-//// MERE VÆRDI SECTION ENDS 
 
-
-////////
-///////////////
-///////
-
-
-////// USER CASE STARTS
 
 .usercase-wrapper1 {
 
@@ -160,15 +143,7 @@ Card .card-imgage{
   font-family: Outfit;
 }
 
-///// USER CASE ENDS
 
-
-////////
-///////////////
-///////
-
-
-////// BOARD OF SCIENTIST START
 
 .scientistcard-footer {
 
@@ -197,15 +172,7 @@ Card .card-imgage{
 }
 
 
-////// BOARD OF SCIENTIST START
 
-
-////////
-///////////////
-///////
-
-
-///// CUSTOMER SUCCESS START
 
 .custom-titel {
 
@@ -243,15 +210,7 @@ Card .card-imgage{
 }
 
 
-//// CUSTOMER SUCCESS ENDS
 
-
-////////
-///////////////
-///////
-
-
-///// SUBSCRIBER STARTS
 
 .sub-form input {
 
@@ -263,29 +222,7 @@ Card .card-imgage{
 
 
 
-///// SUBSCRIBER ENDS
 
-
-////////
-///////////////
-///////
-
-
-///// KONTAKT OS EMAIL MODAL START
-
-
-
-
-
-////// KONTAKT OS EMAIL MODAL START
-
-
-////////
-///////////////
-///////
-
-
-///// MEDIA QUERIES START
 
 
   @media screen and (max-width: 968px) {

@@ -28,7 +28,7 @@ function Home() {
         <div className="Home">
             <Container fluid>
 
-                {/*HERO SECTION*/}
+            
                 <div className='hero-wrapper mb-4' >
                     <Row>
 
@@ -82,7 +82,7 @@ function Home() {
 
 
 
-                {/*HVILKE VÆRDIER BRINGER VI*/}
+         
                 <div className='værdi-wrapper'>
 
                     <Row> 
@@ -123,7 +123,7 @@ function Home() {
 
 
 
-                {/*USER CASES*/}
+            
                 <div className='mb-4'>
                     <Row>
                         <Col sm={12} md={12} lg={12}>
@@ -141,7 +141,7 @@ function Home() {
 
 
 
-                {/*BOARD OF SCIENTIST*/}
+            
                 <div className='py-4'>
                     <Row className='justify-content-center'>
                         <Col sm={10} md={10} lg={10}>
@@ -158,7 +158,7 @@ function Home() {
 
 
 
-                {/*CUSTOMER SUCCESS*/}
+        
                 <div className='custom wrapper text-dark pb-4' style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                     <Row className='justify-content-center'>
                         <Col sm={12} md={9} lg={9} xl={9}>
@@ -178,7 +178,7 @@ function Home() {
                 </div>
 
 
-                {/*FAQ*/}
+               
                 <div className='text-dark my-4'>
                     <Row className='justify-content-center'>
                         <Col sm={12} md={8} lg={6} xl={6}>
@@ -194,7 +194,6 @@ function Home() {
                 </div>
 
 
-                {/*SUBSCRIBER*/}
                 <div className='text-dark'>
                     <Row className='justify-content-center '>
                         <Col sm={12} md={6} lg={6} xl={6}>
