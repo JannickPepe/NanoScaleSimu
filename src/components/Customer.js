@@ -6,7 +6,8 @@ import { Card, Col, Row } from "react-bootstrap";
 
 import '../styles/Home.css';
 
-// {new Date().toLocaleDateString("en-US")} // To get real time date
+// {new Date().toLocaleDateString("en-US")} 
+// To get real time date
 
 const Customer = () => {
 

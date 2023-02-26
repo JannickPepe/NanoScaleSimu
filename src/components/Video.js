@@ -2,7 +2,7 @@ import React from 'react';
 import { Ratio } from 'react-bootstrap';
 
 import '../styles/Home.css'
-/*controls width="100%"*/ 
+//controls width="100%"
 
 const src = "https://nanoscalesimulations.com/Gallery/BIG-MAP%20demo%201.1.mov";
 
