@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Button, Card, Figure, Image } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 
 import ModalEmail from '../components/ModalEmail';
 import ScrollButton from '../components/ScrollButton';
@@ -118,15 +118,63 @@ function About() {
                         </Col>
                     </Row>
 
-                    <Row>
-                        <Col>
-                        </Col>
-                    </Row>
+                    <Container>
+
+                        <Row>
+                            <Col sm={12} md={3} lg={3} xl={3} >
+                                <div className='hvem-profil-img'>
+                                    <Image rounded alt="vision" src={require('../img/idea.png')}  />
+                                </div>
+                                <div className='hvem-profil-navn'>
+                                    <h3>Jannick Pedersen</h3>
+                                </div>
+                            </Col>
+                            <Col sm={12} md={9} lg={9} xl={9}>
+                                <div className='hvem-content'>
+                                    <div className='hvem-rolle'>
+                                        <h4>Min Rolle </h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <div className='hvem-historie'>
+                                    <h4>Min Historie</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+
+                        <hr></hr>
+
+                        <Row>
+                            <Col sm={12} md={9} lg={9} xl={9}>
+                                <div className='hvem-content-right'>
+                                    <div className='hvem-rolle-right'>
+                                        <h4>Min Rolle</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <div className='hvem-historie-right'>
+                                    <h4>Min Historie</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col sm={12} md={3} lg={3} xl={3} className='' style={{}} >
+                                <div className='hvem-profil-img-right'>
+                                    <Image rounded alt="vision" src={require('../img/idea.png')}  />
+                                </div>
+                                <div className='hvem-profil-navn-right'>
+                                    <h3>Jannick Pedersen</h3>
+                                </div>
+                            </Col>
+                        </Row>
+
+                    </Container>
 
                 </div>
 
-
-
+                
+            <ModalEmail/>
+            <ScrollButton/>
             </div>
         </Container> 
     );

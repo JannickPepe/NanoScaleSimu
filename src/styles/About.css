@@ -57,6 +57,88 @@ figcaption h1{
 
 
 
+
+
+
+.hvem-profil-img{
+    height:150px;
+    width:150px;
+    float:right;
+    margin-right:12%;
+}
+
+.hvem-profil-navn{
+    float:right;
+}
+
+.hvem-profil-navn h3{
+    color:#3C9FE1;
+    margin-top:6%;
+}
+
+
+.hvem-content{
+    margin-top:6%;
+    margin-left:1%;
+}
+
+.hvem-content h4{
+    color:#3C9FE1;
+}
+
+.hvem-content p {
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:1%;
+    width:85%;
+}
+
+
+
+
+.hvem-profil-img-right{
+    height:150px;
+    width:150px;
+    float:left;
+    margin-top:5%;
+    margin-left:12%;
+}
+
+.hvem-profil-navn-right{
+    float:left;
+}
+
+.hvem-profil-navn-right h3{
+    color:#3C9FE1;
+    margin-top:6%;
+}
+
+
+.hvem-content-right{
+    width:85%;
+    margin-left:15%;
+}
+
+.hvem-content-right h4{
+    color:#3C9FE1;
+    float:right;
+    
+}
+
+.hvem-content-right p {
+    float:right;
+    padding-top:1%;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+
+
+
+
+
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     figcaption {
@@ -79,6 +161,17 @@ figcaption h1{
     .vision-værdi .vision-img{
         width:100%;
     }
+    .hvem-profil-navn{
+        float:none;
+        text-align: center;
+        margin-top:3%;
+    }
+    .hvem-profil-img{
+        float:none;
+        text-align: center;
+        margin-left:33%;
+        margin-top:3%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -87,7 +180,7 @@ figcaption h1{
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
     figcaption {
         position:inherit;
         bottom:inherit;
@@ -107,12 +200,22 @@ figcaption h1{
     }
     .vision-værdi .vision-img{
         width:100%;
+    }
+    .hvem-profil-navn{
+        float:none;
+        text-align: center;
+        margin-top:3%;
+    }
+    .hvem-profil-img{
+        float:none;
+        margin-left:25%;
+        margin-top:3%;
     }
 }
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+@media only screen and ( max-width: 900px) {
     figcaption {
         position:inherit;
         bottom:inherit;
@@ -133,9 +236,20 @@ figcaption h1{
     .vision-værdi .vision-img{
         width:100%;
     }
+    .hvem-profil-navn{
+        float:none;
+        text-align: center;
+        margin-top:3%;
+    }
+    .hvem-profil-img{
+        margin-top:3%;
+    }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+    .hvem-profil-img{
+        float:right;
+    }
 }
