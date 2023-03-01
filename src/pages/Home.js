@@ -82,7 +82,6 @@ function Home() {
 
 
 
-         
                 <div className='værdi-wrapper'>
 
                     <Row> 
@@ -159,7 +158,7 @@ function Home() {
 
 
         
-                <div className='custom wrapper text-dark pb-4' style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                <div className='custom wrapper text-dark pb-4'>
                     <Row className='justify-content-center'>
                         <Col sm={12} md={9} lg={9} xl={9}>
                             <div className='custom-titel text-center mt-4 mb-4'>
@@ -178,7 +177,7 @@ function Home() {
                 </div>
 
 
-               
+
                 <div className='text-dark my-4'>
                     <Row className='justify-content-center'>
                         <Col sm={12} md={8} lg={6} xl={6}>

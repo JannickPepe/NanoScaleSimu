@@ -20,15 +20,19 @@ function CollapsibleExample () {
                 <Nav.Link href="/">Produkter</Nav.Link>
                 <Nav.Link href="/events">Projekter</Nav.Link>
                 <NavDropdown title="Om Os" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.2">
-                    Vision
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                    Projekter
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
-                    Hvem er vi
-                </NavDropdown.Item>
+                    <NavDropdown.Item href="/about">
+                        Oversigt
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.2">
+                        Vision
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                        Projekter
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">
+                        Hvem er vi
+                    </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="/events">Blog</Nav.Link>
                 <Nav.Link href="/about">Forum</Nav.Link>

@@ -1,0 +1,141 @@
+figcaption {
+    position:absolute;
+    bottom:20%;
+    border-radius:20px 20px 20px 20px;
+    background-color:white;
+    text-align:center;
+    margin-left:36%;
+    padding: 2%;
+    font-family:Montserrat;
+}
+
+figcaption h1{
+    color:#3C9FE1;
+}
+
+
+.hero-icon-section{
+    position:absolute;
+    bottom:2%;
+    border-radius:84px 84px 84px 84px;
+    color:white;
+    margin-left:47%;
+    text-align:center;
+
+}
+
+.hero-icon {
+    
+}
+
+
+
+
+
+
+
+.vision-brødtekst p{
+    padding-left:5%;
+    padding-right:5%;
+    width:80%;
+    padding-top:2%;
+    font-size: 18px;
+    font-family:Outfit;
+
+}
+
+.vision-værdi-sektion{
+}
+
+.vision-værdi{
+    border-radius: 84px 84px 84px 84px;
+    outline-style: outset;
+    outline-color: #3C9FE1;
+    max-height:225px;
+    padding:3%;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    figcaption {
+        position:inherit;
+        bottom:inherit;
+        margin: 0.25rem 0px;
+    }
+    .hero-icon-section {
+        position:inherit;
+        bottom:inherit;
+        margin: 0.75rem 0px;
+        color:#3C9FE1;
+    }
+    .hero-icon{
+        position:inherit;
+        bottom:inherit;
+        margin: 0.75rem 0px;
+        color:#3C9FE1;
+    }
+    .vision-værdi .vision-img{
+        width:100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+    figcaption {
+        position:inherit;
+        bottom:inherit;
+        margin: 0.25rem 0px;
+    }
+    .hero-icon-section {
+        position:inherit;
+        bottom:inherit;
+        margin: 0.75rem 0px;
+        color:#3C9FE1;
+    }
+    .hero-icon{
+        position:inherit;
+        bottom:inherit;
+        margin: 0.75rem 0px;
+        color:#3C9FE1;
+    }
+    .vision-værdi .vision-img{
+        width:100%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    figcaption {
+        position:inherit;
+        bottom:inherit;
+        margin: 0.25rem 0px;
+    }
+    .hero-icon-section {
+        position:inherit;
+        bottom:inherit;
+        margin: 0.75rem 0px;
+        color:#3C9FE1;
+    }
+    .hero-icon{
+        position:inherit;
+        bottom:inherit;
+        margin: 0.75rem 0px;
+        color:#3C9FE1;
+    }
+    .vision-værdi .vision-img{
+        width:100%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

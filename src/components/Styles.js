@@ -25,3 +25,4 @@ export const Button = styled.div`
    cursor: pointer;
    color:#3C9FE1;
    `
+
