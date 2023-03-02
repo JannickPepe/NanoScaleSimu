@@ -122,10 +122,10 @@ function About() {
 
                         <Row>
                             <Col sm={12} md={3} lg={3} xl={3} >
-                                <div className='hvem-profil-img'>
+                                <div className='hvem-profil-img bg-info' style={{borderRadius:84, padding:12}}>
                                     <Image rounded alt="vision" src={require('../img/idea.png')}  />
                                 </div>
-                                <div className='hvem-profil-navn'>
+                                <div className='hvem-profil-navn bg-info'>
                                     <h3>Jannick Pedersen</h3>
                                 </div>
                             </Col>
@@ -149,32 +149,60 @@ function About() {
                             <Col sm={12} md={9} lg={9} xl={9}>
                                 <div className='hvem-content-right'>
                                     <div className='hvem-rolle-right'>
-                                        <h4>Min Rolle</h4>
+                                        <h4>Min Rolle </h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                     </div>
                                     <div className='hvem-historie-right'>
-                                    <h4>Min Historie</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <h4>Min Historie</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                     </div>
                                 </div>
                             </Col>
-                            <Col sm={12} md={3} lg={3} xl={3} className='' style={{}} >
-                                <div className='hvem-profil-img-right'>
+                            <Col sm={12} md={3} lg={3} xl={3} >
+                                <div className='hvem-profil-img-right bg-info' style={{borderRadius:84, padding:12}}>
                                     <Image rounded alt="vision" src={require('../img/idea.png')}  />
                                 </div>
-                                <div className='hvem-profil-navn-right'>
+                                <div className='hvem-profil-navn-right bg-info'>
                                     <h3>Jannick Pedersen</h3>
                                 </div>
                             </Col>
                         </Row>
 
-                    </Container>
+                        <hr></hr>
 
+                    </Container>
+                </div>
+
+
+
+                <div className='vores-projekter-sektion my-4'>
+
+                    <div className='vores-projekter-title text-center'>
+                        <Row>
+                            <Col>
+                            <h2>Vores Projekter</h2>
+                            </Col>
+                        </Row>
+                    </div>
+                    
+                    <div className='vores-projekter-content'>
+                        <Container>
+                            <Row>
+                                <Col>
+                                </Col>
+
+                                <Col>
+                                </Col>
+                            </Row>
+                        </Container>
+                    </div>
+            
                 </div>
 
                 
             <ModalEmail/>
             <ScrollButton/>
+
             </div>
         </Container> 
     );

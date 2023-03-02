@@ -63,17 +63,20 @@ figcaption h1{
 .hvem-profil-img{
     height:150px;
     width:150px;
-    float:right;
+    float:left;
     margin-right:12%;
+    margin-top:15%;
 }
 
 .hvem-profil-navn{
     float:right;
+    margin-top:4%;
+    padding:3%;
+    border-radius: 20px 20px 20px 20px
 }
 
 .hvem-profil-navn h3{
-    color:#3C9FE1;
-    margin-top:6%;
+    color:black;
 }
 
 
@@ -99,38 +102,51 @@ figcaption h1{
 .hvem-profil-img-right{
     height:150px;
     width:150px;
-    float:left;
-    margin-top:5%;
+    float:right;
     margin-left:12%;
+    margin-top:15%;
 }
 
 .hvem-profil-navn-right{
     float:left;
+    margin-top:4%;
+    padding:3%;
+    border-radius: 20px 20px 20px 20px
 }
 
 .hvem-profil-navn-right h3{
-    color:#3C9FE1;
-    margin-top:6%;
+    color:black;
 }
 
 
 .hvem-content-right{
+    margin-top:6%;
+    margin-right:1%;
+}
+
+.hvem-rolle-right{
+    float:right;
     width:85%;
-    margin-left:15%;
+}
+
+.hvem-historie-right{
+    float:right;
+    width:85%;
 }
 
 .hvem-content-right h4{
     color:#3C9FE1;
     float:right;
-    
 }
 
 .hvem-content-right p {
-    float:right;
-    padding-top:1%;
     padding-left:5%;
     padding-right:5%;
+    padding-top:1%;
+    float:right;
 }
+
+
 
 
 
@@ -172,6 +188,41 @@ figcaption h1{
         margin-left:33%;
         margin-top:3%;
     }
+    .hvem-content h4{
+        text-align:left;
+        width:100%;
+    }
+    .hvem-content p{
+        text-align:left;
+        width:100%;
+        padding:0px;
+    }
+    .hvem-profil-navn-right{
+        float:none;
+        text-align: center;
+        margin-top:3%;
+    }
+    .hvem-profil-img-right{
+        float:none;
+        text-align: center;
+        margin-right:33%;
+        margin-top:3%;
+    }
+    .hvem-content-right h4{
+        text-align:left;
+        width:100%;
+    }
+    .hvem-content-right p{
+        text-align:left;
+        width:100%;
+        padding:0px;
+    }
+    .hvem-rolle-right{
+        width:100%;
+    }
+    .hvem-historie-right{
+        width:100%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -211,6 +262,16 @@ figcaption h1{
         margin-left:25%;
         margin-top:3%;
     }
+    .hvem-profil-navn-right{
+        float:none;
+        text-align: center;
+        margin-top:3%;
+    }
+    .hvem-profil-img-right{
+        float:none;
+        margin-left:25%;
+        margin-top:3%;
+    }
 }
 
 
@@ -244,6 +305,14 @@ figcaption h1{
     .hvem-profil-img{
         margin-top:3%;
     }
+    .hvem-profil-navn-right{
+        float:none;
+        text-align: center;
+        margin-top:3%;
+    }
+    .hvem-profil-img-right{
+        margin-top:3%;
+    }
 
 }
 
@@ -252,4 +321,12 @@ figcaption h1{
     .hvem-profil-img{
         float:right;
     }
+    .hvem-profil-img-right{
+        float:left;
+    }
+    .hvem-profil-navn-right{
+        float:left;
+    }
+
+
 }
