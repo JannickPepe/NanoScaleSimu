@@ -146,7 +146,7 @@ function About() {
                         <hr></hr>
 
                         <Row>
-                            <Col sm={12} md={9} lg={9} xl={9}>
+                            <Col xs={{span: 12, order: 2}} md={{span: 9, order: 2}} lg={{span: 9, order: 1,}} xl={{span: 9, order:1}}>
                                 <div className='hvem-content-right'>
                                     <div className='hvem-rolle-right'>
                                         <h4>Min Rolle </h4>
@@ -158,7 +158,7 @@ function About() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col sm={12} md={3} lg={3} xl={3} >
+                            <Col xs={{span: 12, order: 1}} md={{span: 3, order: 2}} lg={{span: 3, order: 2}} xl={{span: 3, order:2}} >
                                 <div className='hvem-profil-img-right bg-info' style={{borderRadius:84, padding:12}}>
                                     <Image rounded alt="vision" src={require('../img/idea.png')}  />
                                 </div>
@@ -190,55 +190,73 @@ function About() {
                     
                     <div className='vores-projekter-content'>
                         <Container>
+                    
                             <Row className='justify-content-center'>
-                                <Col sm={12} md={9} lg={9} xl={9}>
-                                <div class="card my-4" style={{borderRadius:'20px'}}>
-                                    <div class="row no-gutters">
-                                        <div class="col-md-3">
-                                        <Image rounded alt="vision" src={require('../img/galleri6.jpg')}  />
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Project XY, At Roskilde campus</h4>
-                                                <p class="card-text">Creating AR experiences is incredibly easy with Hololink's intuitive, browser-based editor. This allows you to create working prototypes in record time.</p>
-                                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2 text-center bg-info" style={{borderTopRightRadius:'20px', borderBottomRightRadius:'20px'}}>
-                                            <Card.Title style={{marginTop:70}}>
-                                                <a href='home' alt="læsMere" style={{textDecoration:'none'}}>
-                                                    <h4>Læs<span style={{display:'block', paddingTop:5}}>Mere</span></h4>
-                                                </a>
-                                            </Card.Title>
-                                        </div>
-                                    </div>
-                                </div>
-                                </Col>
-                                <Col sm={12} md={9} lg={9} xl={9}>
-                                <div class="card my-4" style={{borderRadius:'20px'}}>
-                                    <div class="row no-gutters">
-                                        <div class="col-md-2 text-center bg-info" 
-                                        style={{borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px'}}>
-                                            <Card.Title style={{marginTop:70}}>
-                                                <a href='home' alt="læsMere" style={{textDecoration:'none'}}>
-                                                    <h4>Læs<span style={{display:'block', paddingTop:5}}>Mere</span></h4>
-                                                </a>
-                                            </Card.Title>
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Project VR Play</h4>
-                                                <p class="card-text">Creating AR experiences is incredibly easy with Hololink's intuitive, browser-based editor. This allows you to create working prototypes in record time.</p>
-                                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <Image rounded alt="vision" src={require('../img/galleri6.jpg')}  />
-                                        </div>
-                                    </div>
-                                </div>
+                                <Col xs={12} sm={12} md={12} lg={9} xl={9}>
+                                    <Card className='my-4' style={{borderRadius:'20px'}}>
+                                        <Row>
+                                            <Col xs={12} sm={12} md={3} lg={3} xl={3} className='d-flex align-items-xs-center flex-column'>
+                                                <Image alt="vision" src={require('../img/galleri6.jpg')} style={{borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px', height:219}} />
+                                            </Col>
+                                            <Col xs={12} sm={12} md={7} lg={7} xl={7}>
+                                                <Card.Body className=''>
+                                                    <Card.Title>
+                                                        <h4>Project XY, At Roskilde campus</h4>
+                                                    </Card.Title>
+                                                    <Card.Text>
+                                                        <p>Creating AR experiences is incredibly easy with Hololink's intuitive, browser-based editor. This allows you to create working prototypes in record time.</p>
+                                                    </Card.Text>
+                                                    <Card.Text>
+                                                        <p><small class="text-muted">Lavet af: Jannick og Jannick</small></p>
+                                                    </Card.Text>
+                                                </Card.Body>
+                                            </Col>
+                                            <Col xs={12} sm={12} md={2} lg={2} xl={2} className='bg-info' style={{borderTopRightRadius:'20px', borderBottomRightRadius:'20px'}}>
+                                                <Card.Title className='text-center' style={{textDecoration:'none', marginTop:70}}>
+                                                    <a href='home' alt="læsMere" style={{textDecoration:'none'}}>
+                                                        <h5>Læs<span style={{display:'block', paddingTop:5}}>Mere</span></h5>
+                                                    </a>
+                                                </Card.Title>
+                                            </Col>
+                                        </Row>
+                                    </Card>
                                 </Col>
                             </Row>
+                            
+                            <Row className='justify-content-center'>
+                                <Col xs={12} sm={12} md={12} lg={9} xl={9}>
+                                    <Card className='my-4' style={{borderRadius:'20px'}}>
+                                        <Row >
+                                            <Col xs={{span:12, order:3}} sm={{span:12, order:3}} md={{span:2, order:1}} lg={{span:2, order:1}} xl={{span:2, order:1}} className='bg-info' style={{borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px'}}>
+                                                <Card.Title className='text-center' style={{textDecoration:'none', marginTop:70}}>
+                                                    <a href='home' alt="læsMere" style={{textDecoration:'none'}}>
+                                                        <h5>Læs<span style={{display:'block', paddingTop:5}}>Mere</span></h5>
+                                                    </a>
+                                                </Card.Title>
+                                            </Col>
+                                            <Col xs={{span:12, order:2}} sm={{span:12, order:2}} md={{span:7, order:2}} lg={{span:7, order:2}} xl={{span:7, order:2}}>
+                                                <Card.Body className=''>
+                                                    <Card.Title>
+                                                        <h4>Project XY, At Roskilde campus</h4>
+                                                    </Card.Title>
+                                                    <Card.Text>
+                                                        <p>Creating AR experiences is incredibly easy with Hololink's intuitive, browser-based editor. This allows you to create working prototypes in record time.</p>
+                                                    </Card.Text>
+                                                    <Card.Text>
+                                                        <p><small class="text-muted">Lavet af: Jannick og Jannick</small></p>
+                                                    </Card.Text>
+                                                </Card.Body>
+                                            </Col>
+                                            <Col xs={{span:12, order:1}} sm={{span:12, order:1}} md={{span:3, order:3}} lg={{span:3, order:3}} xl={{span:3, order:3}} className='d-flex align-items-xs-center flex-column'>
+                                                <Image alt="vision" src={require('../img/galleri6.jpg')} style={{borderTopRightRadius:'20px', borderBottomRightRadius:'20px', height:219}} />
+                                            </Col>
+                                        </Row>
+                                    </Card>
+                                </Col>
+                            </Row>
+                
+                
+
                         </Container>
                     </div>
             

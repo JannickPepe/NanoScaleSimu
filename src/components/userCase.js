@@ -53,14 +53,14 @@ const UserCase = () => {
                         usercaseLeft?.map((usercaseLeft, i)=>(
                             <Card className="shadow-lg" style={{borderRadius:20}}>
                                     <Row key={i}>
-                                        <Col sm={12} md={4} lg={4}>
+                                        <Col xs={{span: 12, order: 2}} md={{span: 12, order: 2}} lg={{span: 4, order: 1, offset: 0}}>
                                             <div className="usercase-info p-4">
                                                 <h4>{usercaseLeft.titel}</h4>
                                                 <hr></hr>
                                                 <p>{usercaseLeft.tekst}</p>
                                             </div>
                                         </Col>
-                                        <Col sm={12} md={8} lg={8}>
+                                        <Col xs={{span: 12, order: 1}} md={{span: 6, order: 1, offset:3}} lg={{span: 8, order: 2, offset: 0}}>
                                             <img className="p-4" src={usercaseLeft.image} alt="llalal"></img>
                                         </Col>
                                     </Row>
@@ -76,10 +76,10 @@ const UserCase = () => {
                         usercaseRight?.map((usercaseRight, k)=>(
                             <Card className="shadow-lg" style={{borderRadius:20}}>
                                     <Row key={k}>
-                                        <Col sm={12} md={8} lg={8}>
+                                        <Col xs={{span: 12, order: 1}} md={{span: 6, order: 1, offset:3}} lg={{span: 8, order: 1, offset:0}}>
                                             <img className="p-4" src={usercaseRight.image} alt="llalal"></img>
                                         </Col>
-                                        <Col sm={12} md={4} lg={4}>
+                                        <Col xs={{span: 12, order: 2}} md={{span: 12, order: 2}} lg={{span: 4, order: 2, offset:0}}>
                                             <div className="usercase-info p-4">
                                                 <h4>{usercaseRight.titel}</h4>
                                                 <hr></hr>

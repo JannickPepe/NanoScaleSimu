@@ -158,7 +158,6 @@ figcaption h1{
 
 
 
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     figcaption {
@@ -227,6 +226,7 @@ figcaption h1{
     .hvem-historie-right{
         width:100%;
     }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
