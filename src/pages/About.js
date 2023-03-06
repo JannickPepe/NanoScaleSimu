@@ -196,11 +196,11 @@ function About() {
                                     <Card className='my-4' style={{borderRadius:'20px'}}>
                                         <Row>
                                             <Col xs={12} sm={12} md={3} lg={3} xl={3} className='d-flex align-items-xs-center flex-column'>
-                                                <Image alt="vision" src={require('../img/galleri6.jpg')} style={{borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px', height:219}} />
+                                                <Image className='læs-mere-img-left' alt="vision" src={require('../img/galleri6.jpg')} style={{height:219}} />
                                             </Col>
                                             <Col xs={12} sm={12} md={7} lg={7} xl={7}>
-                                                <Card.Body className=''>
-                                                    <Card.Title>
+                                                <Card.Body className='læs-mere-body'>
+                                                    <Card.Title className='læs-mere-titel'>
                                                         <h4>Project XY, At Roskilde campus</h4>
                                                     </Card.Title>
                                                     <Card.Text>
@@ -239,8 +239,8 @@ function About() {
                                                 </div>
                                             </Col>
                                             <Col xs={{span:12, order:2}} sm={{span:12, order:2}} md={{span:7, order:2}} lg={{span:7, order:2}} xl={{span:7, order:2}}>
-                                                <Card.Body className=''>
-                                                    <Card.Title>
+                                                <Card.Body className='læs-mere-body'>
+                                                    <Card.Title className='læs-mere-titel'>
                                                         <h4>Project XY, At Roskilde campus</h4>
                                                     </Card.Title>
                                                     <Card.Text>
@@ -252,7 +252,7 @@ function About() {
                                                 </Card.Body>
                                             </Col>
                                             <Col xs={{span:12, order:1}} sm={{span:12, order:1}} md={{span:3, order:3}} lg={{span:3, order:3}} xl={{span:3, order:3}} className='d-flex align-items-xs-center flex-column'>
-                                                <Image alt="vision" src={require('../img/galleri6.jpg')} style={{borderTopRightRadius:'20px', borderBottomRightRadius:'20px', height:219}} />
+                                                <Image className='læs-mere-img' alt="vision" src={require('../img/galleri6.jpg')} style={{height:219}} />
                                             </Col>
                                         </Row>
                                     </Card>

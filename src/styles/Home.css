@@ -225,29 +225,40 @@ Card .card-imgage{
 
 
 
-  @media screen and (max-width: 968px) {
-    .title_tekst h2 {
-      
-    }
-  }
 
 
-  @media screen and (max-width: 668px) {
-    .title_tekst h2 {
-    
-    }
-    .title_tekst h1 span{
-      
-    }
-    .title_tekst h1 span span {
-    
-    }
-    .title_tekst h1:hover {
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
   
-    }
-    .title_section hr{
-    
-    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 760px) {
+
+
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and ( max-width: 900px) {
+  .usercase-info h4{
+    text-align:center;
   }
 
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+
+}
 

@@ -17,6 +17,8 @@ import FAQ from '../components/FAQ';
 import Video from '../components/Video';
 import ScrollButton from '../components/ScrollButton';
 
+import UserCaseRight from '../components/userCaseRight';
+
 
 
 
@@ -132,6 +134,9 @@ function Home() {
                             <div className='usercase-komponent'>
                                 <Container>
                                     <UserCase/>
+                                </Container>
+                                <Container>
+                                    <UserCaseRight/> 
                                 </Container>
                             </div>
                         </Col>

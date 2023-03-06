@@ -162,6 +162,14 @@ figcaption h1{
 
 }
 
+.læs-mere-img{
+    border-radius:0px 20px 20px 0px;
+}
+
+.læs-mere-img-left{
+    border-radius:20px 0px 0px 20px;
+}
+
 
 
 
@@ -246,6 +254,17 @@ figcaption h1{
     .card-læs-mere a{
         color:white;
         
+    }
+    .læs-mere-img{
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .læs-mere-img-left{
+        border-radius: 20px 20px 0px 0px;
+    }
+    .læs-mere-titel h4{
+        margin-top:2%;
+        padding-top:2%;
     }
 
 }
@@ -360,6 +379,5 @@ figcaption h1{
     .læs-mere-row{
         background-color:#3C9FE1;
     }
-
 
 }
