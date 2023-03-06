@@ -211,12 +211,14 @@ function About() {
                                                     </Card.Text>
                                                 </Card.Body>
                                             </Col>
-                                            <Col xs={12} sm={12} md={2} lg={2} xl={2} className='bg-info' style={{borderTopRightRadius:'20px', borderBottomRightRadius:'20px'}}>
-                                                <Card.Title className='text-center' style={{textDecoration:'none', marginTop:70}}>
-                                                    <a href='home' alt="læsMere" style={{textDecoration:'none'}}>
-                                                        <h5>Læs<span style={{display:'block', paddingTop:5}}>Mere</span></h5>
-                                                    </a>
-                                                </Card.Title>
+                                            <Col xs={12} sm={12} md={2} lg={2} xl={2} className='læs-mere-row' style={{borderTopRightRadius:'20px', borderBottomRightRadius:'20px'}}>
+                                                <div className='card-læs-mere'>
+                                                    <Card.Title className='text-center' style={{textDecoration:'none', marginTop:70}}>
+                                                        <a href='home' alt="læsMere" style={{textDecoration:'none'}}>
+                                                            <h5>Læs<span style={{display:'block', paddingTop:5}}>Mere</span></h5>
+                                                        </a>
+                                                    </Card.Title>
+                                                </div>
                                             </Col>
                                         </Row>
                                     </Card>
@@ -227,12 +229,14 @@ function About() {
                                 <Col xs={12} sm={12} md={12} lg={9} xl={9}>
                                     <Card className='my-4' style={{borderRadius:'20px'}}>
                                         <Row >
-                                            <Col xs={{span:12, order:3}} sm={{span:12, order:3}} md={{span:2, order:1}} lg={{span:2, order:1}} xl={{span:2, order:1}} className='bg-info' style={{borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px'}}>
-                                                <Card.Title className='text-center' style={{textDecoration:'none', marginTop:70}}>
-                                                    <a href='home' alt="læsMere" style={{textDecoration:'none'}}>
-                                                        <h5>Læs<span style={{display:'block', paddingTop:5}}>Mere</span></h5>
-                                                    </a>
-                                                </Card.Title>
+                                            <Col xs={{span:12, order:3, offset:0}} sm={{span:12, order:3, offset: 0}} md={{span:2, order:1, offset: 0}} lg={{span:2, order:1, offset: 0}} xl={{span:2, order:1, offset: 0}} className='læs-mere-row' style={{borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px'}}>
+                                                <div className="card-læs-mere">
+                                                    <Card.Title className='text-center' style={{textDecoration:'none', marginTop:70}}>
+                                                        <a href='home' alt="læsMere" style={{textDecoration:'none'}}>
+                                                            <h5>Læs<span style={{display:'block', paddingTop:5}}>Mere</span></h5>
+                                                        </a>
+                                                    </Card.Title>
+                                                </div>
                                             </Col>
                                             <Col xs={{span:12, order:2}} sm={{span:12, order:2}} md={{span:7, order:2}} lg={{span:7, order:2}} xl={{span:7, order:2}}>
                                                 <Card.Body className=''>
