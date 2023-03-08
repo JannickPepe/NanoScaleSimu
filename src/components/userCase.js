@@ -20,7 +20,7 @@ const UserCase = () => {
 
 
     // queries
-    const q = query(colRef, where('leftTitel', '==', 'usercaseLeft'))
+    const q = query(colRef, where('titel', '==', 'usercaseLeft'))
 
 
     const fetchPost = async () => {
@@ -48,13 +48,13 @@ const UserCase = () => {
                                     <Row key={i}>
                                         <Col xs={{span: 12, order: 2}} md={{span: 12, order: 2}} lg={{span: 4, order: 1, offset: 0}}>
                                             <div className="usercase-info p-4">
-                                                <h4>{usercase.leftTitel}</h4>
+                                                <h4>{usercase.titel}</h4>
                                                 <hr></hr>
-                                                <p>{usercase.leftTekst}</p>
+                                                <p>{usercase.tekst}</p>
                                             </div>
                                         </Col>
                                         <Col xs={{span: 12, order: 1}} md={{span: 6, order: 1, offset:3}} lg={{span: 8, order: 2, offset: 0}}>
-                                            <img className="p-4" src={usercase.leftImage} alt="llalal"></img>
+                                            <img className="p-4" src={usercase.image} alt="llalal"></img>
                                         </Col>
                                     </Row>
                             </Card>  

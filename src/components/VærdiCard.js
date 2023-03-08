@@ -14,7 +14,7 @@ const ValueCard = () => {
     const [todos, setTodos] = useState([]);
 
     const fetchPost = async () => {
-        await getDocs(collection(db, "todos"))
+        await getDocs(collection(db, "værdisæt"))
             .then((querySnapshot)=>{              
                 const newData = querySnapshot.docs
                     .map((doc) => ({...doc.data(), id:doc.id }));
@@ -59,14 +59,14 @@ const ValueCard = () => {
                                         whileTap={{ scale: 0.9 }}
                                         transition={{ duration: 3 }} 
                                     >
-                                        <Card.Img style={{borderTopRightRadius:25, borderTopLeftRadius:25}}  variant="top" src={todo.avatar} alt="Description"/>
+                                        <Card.Img style={{borderTopRightRadius:25, borderTopLeftRadius:25}}  variant="top" src={todo.image} alt="Description"/>
                                     </motion.div>
                                 </div>
                                 <Card.Body>
                                     <div className="valuetitletekst px-2 pb-4">
-                                        <Card.Title className="text-center"><h4>{todo.Title}</h4></Card.Title>
+                                        <Card.Title className="text-center"><h4>{todo.titel}</h4></Card.Title>
                                         <hr></hr>
-                                        <Card.Text style={{zIndex:9}}><ReadMore >{todo.text}</ReadMore></Card.Text>
+                                        <Card.Text style={{zIndex:9}}><ReadMore >{todo.tekst}</ReadMore></Card.Text>
                                     </div>
                                 </Card.Body>
                             </Card>

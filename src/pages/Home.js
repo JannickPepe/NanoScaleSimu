@@ -37,7 +37,7 @@ function Home() {
                         <Col sm={12} md={12} lg={4} xl={4}>
                             <div className='hero_info'>
                                 <div className='hero-title pt-4'>
-                                    <motion.h3 
+                                    <motion.div
                                         animate={{ x: [1, 50, 1], opacity: 1, scale: 1 }}
                                         transition={{
                                             duration: 3,
@@ -47,10 +47,10 @@ function Home() {
                                         initial={{ opacity: 0, scale: 0.5 }}
                                     >
                                         <h1>Engager Dine Elever Med Interaktive og Realistiske Simuleringer</h1>
-                                    </motion.h3>
+                                    </motion.div>
                                 </div>
                                 <div className='hero-tekst pt-4'>
-                                <motion.h3 
+                                <motion.div
                                     animate={{ x: [5, 95, 5], opacity: 1, scale: 1 }}
                                     transition={{
                                         duration: 3,
@@ -62,7 +62,7 @@ function Home() {
                                 >
                                     <p>Elevate Your Classroom Teaching With Cutting-edge Molecular Simulations And Interactive Virtual Labs.
                                     </p>
-                                </motion.h3>
+                                </motion.div>
                                 </div>
                                 <div className='hero-btn mt-4 px-4 pt-4'>
                                     <button type="button" class="btn btn-primary btn-lg">VORES PRODUKTER</button>

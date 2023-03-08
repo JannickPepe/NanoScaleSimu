@@ -34,7 +34,7 @@ function CollapsibleExample () {
                         Hvem er vi
                     </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="/events">Blog</Nav.Link>
+                <Nav.Link href="/blog">Blog</Nav.Link>
                 <Nav.Link href="/about">Forum</Nav.Link>
                 
             </Nav>

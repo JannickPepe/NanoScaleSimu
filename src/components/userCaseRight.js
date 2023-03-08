@@ -17,7 +17,7 @@ const UserCaseRight = () => {
 
 
     // queries
-    const q = query(colRef, where('rightTitel', '==', 'usercaseRight'))
+    const q = query(colRef, where('titel', '==', 'usercaseRight'))
 
 
 
@@ -47,13 +47,13 @@ const UserCaseRight = () => {
                             <Card className="shadow-lg" style={{borderRadius:20}}>
                                     <Row key={i}>
                                         <Col xs={{span: 12, order: 1}} md={{span: 6, order: 1, offset:3}} lg={{span: 8, order: 1, offset:0}}>
-                                            <img className="p-4" src={usercase.rightImage} alt="llalal"></img>
+                                            <img className="p-4" src={usercase.image} alt="llalal"></img>
                                         </Col>
                                         <Col xs={{span: 12, order: 2}} md={{span: 12, order: 2}} lg={{span: 4, order: 2, offset:0}}>
                                             <div className="usercase-info p-4">
-                                                <h4>{usercase.rightTitel}</h4>
+                                                <h4>{usercase.titel}</h4>
                                                 <hr></hr>
-                                                <p>{usercase.rightTekst}</p>
+                                                <p>{usercase.tekst}</p>
                                             </div>
                                         </Col>
                                     </Row>

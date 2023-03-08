@@ -1,0 +1,51 @@
+.blog h1 {
+    margin-top:3%;
+    font-family:Montserrat;
+}
+
+.hero-section-blog{
+    margin-top:5%;
+}
+
+.hero-title-blog {
+    padding:2%;
+}
+
+.hero-title-blog h1{
+    font-family:Montserrat;
+    color:#3C9FE1;
+    font-size:48px;
+}
+
+.hero-mellemtitel-blog {
+    padding:2%;
+}
+
+.hero-mellemtitel-blog h3{
+    font-family:Montserrat;
+    padding-left:4%;
+    padding-right:4%;
+}
+
+.hero-tekst-blog{
+    padding:1%;
+}
+
+.hero-tekst-blog p{
+    text-align:center;
+    color:#3C9FE1;
+    font-size: 18px;
+    font-family:Outfit;
+    margin-top:13px;
+}
+
+
+
+
+.blog-mellemtitel-section {
+    margin-top:7%;
+    margin-bottom:3%;
+    text-align:center;
+    font-family:Montserrat;
+    color:#3C9FE1;
+}

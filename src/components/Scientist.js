@@ -37,7 +37,7 @@ const Scientist = () => {
                         <Card className="shadow-lg" style={{borderRadius:20, display: "flex", justifyContent: "center", alignItems: "center", height:400}} border="info mx-4">
                             <Card.Img style={{width:180, height:150, position: 'absolute', bottom:320}} className="rounded-circle p-4" variant="top" src={science.image} alt="Description"/>
                             <div className="scientist-info">
-                                <Card.Title className="text-center" style={{position: 'relative', top: 40}}><h3>{science.name}</h3></Card.Title>
+                                <Card.Title className="text-center" style={{position: 'relative', top: 40}}><h3>{science.navn}</h3></Card.Title>
                                 <hr style={{position: 'relative', top: 40}}></hr>
                                 <Card.Body style={{position: 'relative', top: 30}}>
                                     <Card.Title><h4>{science.titel}</h4></Card.Title>
