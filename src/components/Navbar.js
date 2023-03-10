@@ -36,11 +36,9 @@ function CollapsibleExample () {
                 </NavDropdown>
                 <Nav.Link href="/blog">Blog</Nav.Link>
                 <Nav.Link href="/about">Forum</Nav.Link>
-                
             </Nav>
             <Form className="d-flex">
                 <SignUp/>
-
             </Form>
             </Navbar.Collapse>
         </Container>

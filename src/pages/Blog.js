@@ -6,11 +6,10 @@ import { motion} from "framer-motion";
 import { Card, Col, Container, Image, Row } from "react-bootstrap";
 import RecipeReviewCard from '../components/Blog/blogOne';
 
-
-
 import '../styles/Blog.css';
 import RecipeReviewCardTwo from '../components/Blog/blogTwo';
 import RecipeReviewCardThree from '../components/Blog/blogThree';
+
 
 
 // const q = query(colRef, where('label', '==', 1,), limit(3))

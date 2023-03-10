@@ -19,7 +19,7 @@ function ModalOne() {
     return (
         <>
             <IconButton aria-label="modal">
-                <FullscreenIcon  onClick={handleShow} color="primary" sx={{fontSize:30}} />
+                <FullscreenIcon  onClick={handleShow} color="primary" sx={{fontSize:40}} />
             </IconButton>
 
             <Modal show={show} fullscreen={fullscreen} onHide={handleClose}>
