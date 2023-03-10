@@ -1,13 +1,16 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion} from "framer-motion";
-import { db } from "../db/firebaseConfig";
-import { collection, getDocs, where, query, limit } from "firebase/firestore";
+// import { db } from "../db/firebaseConfig";
+// import { collection, getDocs, where, query, limit } from "firebase/firestore";
 import { Card, Col, Container, Image, Row } from "react-bootstrap";
+import RecipeReviewCard from '../components/Blog/blogOne';
 
 
 
 import '../styles/Blog.css';
+import RecipeReviewCardTwo from '../components/Blog/blogTwo';
+import RecipeReviewCardThree from '../components/Blog/blogThree';
 
 
 // const q = query(colRef, where('label', '==', 1,), limit(3))
@@ -15,6 +18,7 @@ import '../styles/Blog.css';
 
 function Blog() {
     
+
 
     return (
         <div className="blog my-4">   
@@ -37,8 +41,8 @@ function Blog() {
                                     <motion.div
                                         animate={{ x: [1, 50, 1], opacity: 1, scale: 1 }}
                                         transition={{
-                                            duration: 3,
-                                            delay: 0.3,
+                                            duration: 2,
+                                            delay: 0.2,
                                             ease: [0.5, 0.71, 1, 1.5],
                                         }}
                                         initial={{ opacity: 0, scale: 0.5 }}
@@ -50,8 +54,8 @@ function Blog() {
                                     <motion.div
                                         animate={{ x: [1, 50, 1], opacity: 1, scale: 1 }}
                                         transition={{
-                                            duration: 4,
-                                            delay: 0.4,
+                                            duration: 3,
+                                            delay: 0.3,
                                             ease: [0.5, 0.71, 1, 1.5],
                                         }}
                                         initial={{ opacity: 0, scale: 0.5 }}
@@ -83,7 +87,17 @@ function Blog() {
 
 
                 <div className="blog-section-one my-4">
-                    
+                    <Row xs={1} md={2} lg={3} xl={3} className="g-4 px-4">
+                        <Col>
+                            <RecipeReviewCard/>
+                        </Col>
+                        <Col>
+                            <RecipeReviewCardTwo/>            
+                        </Col>
+                        <Col>
+                            <RecipeReviewCardThree/>    
+                        </Col>
+                    </Row>
             
                 </div>
 

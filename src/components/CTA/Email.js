@@ -1,14 +1,13 @@
+/* eslint-disable no-unused-vars */
 
 import React from "react";
-import { db } from "../../db/firebaseConfig";
 import { useState } from "react";
-import { addDoc, collection } from "firebase/firestore"; // Firebase props
-
-import "../../styles/Email.css";
 
 import { Container } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+
+import "../../styles/Email.css";
 
 
 
