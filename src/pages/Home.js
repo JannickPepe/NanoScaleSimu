@@ -1,23 +1,23 @@
 import React from 'react';
 import '../styles/Home.css';
 
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Button, Card } from 'react-bootstrap';
 
-import ModalEmail from '../components/ModalEmail';
-import Subscriber from '../components/Subscriber';
-import ValueCard from '../components/VærdiCard';
-import UserCase from '../components/userCase';
-import Scientist from '../components/Scientist';
-import Customer from '../components/Customer';
-import FAQ from '../components/FAQ';
-import Video from '../components/Video';
-import ScrollButton from '../components/ScrollButton';
+import ModalEmail from '../components/CTA/ModalEmail';
+import Subscriber from '../components/CTA/Subscriber';
+import ValueCard from '../components/Forside/VærdiCard';
+import UserCase from '../components/Forside/userCase';
+import Scientist from '../components/Forside/Scientist';
+import Customer from '../components/Forside/Customer';
+import FAQ from '../components/Forside/FAQ';
+import Video from '../components/Forside/Video';
+import ScrollButton from '../components/CTA/ScrollButton';
 
-import UserCaseRight from '../components/userCaseRight';
+import UserCaseRight from '../components/Forside/userCaseRight';
 
 
 

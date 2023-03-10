@@ -1,10 +1,10 @@
 
-import { db } from "../db/firebaseConfig";
+import { db } from "../../db/firebaseConfig";
 import React, { useState, useEffect } from 'react';
 import { collection, getDocs } from "firebase/firestore";
 import { Accordion} from "react-bootstrap";
 
-import '../styles/Home.css';
+import '../../styles/Home.css';
 
 const FAQ = () => {
 

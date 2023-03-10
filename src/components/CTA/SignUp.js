@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { db } from "../db/firebaseConfig";
+import { db } from "../../db/firebaseConfig";
 import { addDoc, collection } from "firebase/firestore"; // Firebase props
 
 import { Container } from 'react-bootstrap';

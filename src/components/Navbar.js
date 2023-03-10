@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 
-import SignUp from './SignUp';
+import SignUp from './CTA/SignUp';
 
 
 

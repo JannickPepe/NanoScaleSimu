@@ -1,11 +1,11 @@
-import { db } from "../db/firebaseConfig";
+import { db } from "../../db/firebaseConfig";
 import React, { useState, useEffect } from 'react';
 import { collection, getDocs } from "firebase/firestore";
 import { Card, Col, Row } from "react-bootstrap";
 
 import { motion } from "framer-motion";
 
-import "../styles/Home.css"
+import '../../styles/Home.css';
 
 
 const ValueCard = () => {

@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 
-import { db } from "../db/firebaseConfig";
+import { db } from "../../db/firebaseConfig";
 import { useState } from "react";
 import { addDoc, collection } from "firebase/firestore"; // Firebase props
 

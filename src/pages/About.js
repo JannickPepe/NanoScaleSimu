@@ -9,8 +9,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Card, Image } from 'react-bootstrap';
 
-import ModalEmail from '../components/ModalEmail';
-import ScrollButton from '../components/ScrollButton';
+import ModalEmail from '../components/CTA/ModalEmail';
+import ScrollButton from '../components/CTA/ScrollButton';
 
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 

@@ -5,40 +5,16 @@ import { db } from "../db/firebaseConfig";
 import { collection, getDocs, where, query, limit } from "firebase/firestore";
 import { Card, Col, Container, Image, Row } from "react-bootstrap";
 
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+
 
 import '../styles/Blog.css';
 
 
+// const q = query(colRef, where('label', '==', 1,), limit(3))
 
 
 function Blog() {
-
-    const [lgShow, setLgShow] = useState(false);
-
-    // State to store data todos
-    const [blogs, setBlogs] = useState([]);
-
-    const colRef = collection(db, 'blogs')
-
-    const q = query(colRef, where('label', '==', 1,), limit(3))
-
-
-    const fetchPost = async () => {
-        await getDocs(q)
-            .then((querySnapshot)=>{              
-                const newData = querySnapshot.docs
-                    .map((doc) => ({...doc.data(), id:doc.id }));
-                setBlogs(newData);                
-            }
-        )
-    }
-    useEffect(()=>{
-        fetchPost();
-    })
-
-
+    
 
     return (
         <div className="blog my-4">   

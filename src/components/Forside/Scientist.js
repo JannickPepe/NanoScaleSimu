@@ -1,5 +1,5 @@
 
-import { db } from "../db/firebaseConfig";
+import { db } from "../../db/firebaseConfig";
 import React, { useState, useEffect } from 'react';
 import { collection, getDocs } from "firebase/firestore";
 import { Card, Col, Row } from "react-bootstrap";
@@ -7,7 +7,7 @@ import { Card, Col, Row } from "react-bootstrap";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
 
-import "../styles/Home.css";
+import '../../styles/Home.css';
 
 const Scientist = () => {
 
