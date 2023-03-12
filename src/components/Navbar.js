@@ -17,7 +17,7 @@ function CollapsibleExample () {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
-                <Nav.Link href="/">Produkter</Nav.Link>
+                <Nav.Link href="/products">Produkter</Nav.Link>
                 <Nav.Link href="/events">Projekter</Nav.Link>
                 <NavDropdown title="Om Os" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="/about">
