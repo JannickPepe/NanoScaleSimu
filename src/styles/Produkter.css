@@ -4,28 +4,34 @@ video{
 }
 
 
-
-
+.produkt-forløb-titel {
+    margin-bottom:3%;
+}
 
 
 .produkt-forløb-titel h2{
-    margin-top:7%;
+    margin-top:8%;
+    font-family:Montserrat;
 }
 
 .produkt-forløb-left{
-    margin-top:8%;
+    margin-top:0%;
 }
 
 .produkt-forløb-left h3{
-    margin-bottom:8%;
+    margin-bottom:4%;
+    color:#3C9FE1;
+    font-family:Montserrat;
 }
 
 .produkt-forløb-right{
-    margin-top:4%;
+    margin-top:0%;
 }
 
 .produkt-forløb-right h3{
     margin-bottom:4%;
+    color:#3C9FE1;
+    font-family:Montserrat;
 }
 
 
@@ -33,4 +39,20 @@ video{
 
 .produkt-sektion-titel h2{
     margin-top:7%;
+    font-family:Montserrat;
 }
+
+.produkt-tab-sektion-titel h3 {
+    color:#3C9FE1;
+    font-family:Montserrat;
+}
+
+.produkt-tab-titel h4{
+    color:orange;
+    font-family:Montserrat;
+}
+
+
+
+
+

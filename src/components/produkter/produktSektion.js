@@ -49,28 +49,43 @@ export default function VerticalTabs() {
 
   return (
     <Box sx={{ flexGrow: 1, bgcolor: 'background.paper'}}>
-      <Tabs
-        orientation="vertical"
-        variant="scrollable"
-        value={value}
-        onChange={handleChange}
-        aria-label="Vertical tabs example"
-        sx={{ borderRight: 1, borderColor: 'divider'}}
-      >
-        <Tab label="A modern, feature-packed platform for molecular design" {...a11yProps(0)} />
-        <Tab label="A unique platform for science communication" {...a11yProps(1)} />
-      </Tabs>
+      <div className='my-4'>
+        <Grid>
+          <Grid>
+            <Container fluid>
+            <Tabs
+          orientation=""
+          variant="scrollable"
+          value={value}
+          onChange={handleChange}
+          aria-label="Vertical tabs example"
+          sx={{ borderRight: 1, borderColor: 'divider'}}
+        >
+          <Tab label="A modern, feature-packed platform for molecular design" {...a11yProps(0)} />
+          <Tab label="A unique platform for science communication" {...a11yProps(1)} />
+          <Tab label="VR And Molecyles With AR Technology" {...a11yProps(2)} />
+        </Tabs>
+            </Container>
+          </Grid>
+        </Grid>
+      </div>
+  
+
       <TabPanel value={value} index={0}>
-        <h3 className='text-center mb-2'>A modern, feature-packed platform for molecular design</h3>
+        <div className='produkt-tab-sektion-titel'>
+          <h3 className='text-center mb-2'>A modern, feature-packed platform for molecular design</h3>
+        </div>
         <Grid container>
-            <Grid xs={12} sm={12} md={4} lg={4} xl={4}>
+            <Grid xs={12} sm={12} md={4} lg={4} xl={4} order={{xs:2, sm:2, md:1, lg:1, xl:1}}>
                 <Container>
-                <img rounded className='produkt-img mt-4' alt="vision" src={require('../../img/galleri6.jpg')} style={{height:300}} />
+                <img rounded className='produkt-img mt-4' alt="vision" src={require('../../img/galleri6.jpg')} style={{height:400}} />
                 </Container>
             </Grid>
-            <Grid xs={12} sm={12} md={8} lg={8} xl={8}>
+            <Grid xs={12} sm={12} md={8} lg={8} xl={8}  order={{xs:1, sm:1, md:2, lg:2, xl:2}}>
                 <Container>
-                    <h4 className='mt-4'>Build and simulate, at the same time!</h4>
+                    <div className='produkt-tab-titel'>
+                      <h4 className='mt-4'>Build and simulate, at the same time!</h4>
+                    </div>
                     <div className='produkt-tekst mt-4'>
                         <p>Use physics-based construction to create molecules and assemblies.Model nanosystems through their structures, dynamics, interactions, visuals, and properties.</p>
                         <p>Enable expert-in-the-loop design with interactive simulations.</p>
@@ -81,12 +96,16 @@ export default function VerticalTabs() {
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={1}>
-      <h3 className='text-center mb-2'>A unique platform for science communication</h3>
+        <div className='produkt-tab-sektion-titel'>
+          <h3 className='text-center mb-2'>A unique platform for science communication</h3>
+        </div>
         <Grid container>
             <Grid xs={12} sm={12} md={8} lg={8} xl={8}>
                 <Container>
-                    <h4 className='mt-4'>Build and simulate, at the same time!</h4>
-                    <div className='produkt-tekst mt-4'>
+                    <div className='produkt-tab-titel'>
+                      <h4 className='mt-4 text-end'>Build and simulate, at the same time!</h4>
+                    </div>
+                    <div className='produkt-tekst mt-4 text-end'>
                         <p>Use physics-based construction to create molecules and assemblies.Model nanosystems through their structures, dynamics, interactions, visuals, and properties.</p>
                         <p>Enable expert-in-the-loop design with interactive simulations.</p>
                         <p>Export to large-scale simulators, and import trajectories to compute properties.</p>
@@ -95,7 +114,31 @@ export default function VerticalTabs() {
             </Grid>
             <Grid xs={12} sm={12} md={4} lg={4} xl={4}>
                 <Container>
-                <img rounded className='produkt-img mt-4' alt="vision" src={require('../../img/galleri6.jpg')} style={{height:300}} />
+                <img rounded className='produkt-img mt-4' alt="vision" src={require('../../img/galleri6.jpg')} style={{height:400}} />
+                </Container>
+            </Grid>
+        </Grid>
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+      <div className='produkt-tab-sektion-titel'>
+          <h3 className='text-center mb-2'>A modern, feature-packed platform for molecular design</h3>
+        </div>
+        <Grid container>
+            <Grid xs={12} sm={12} md={4} lg={4} xl={4} order={{xs:2, sm:2, md:1, lg:1, xl:1}}>
+                <Container>
+                <img rounded className='produkt-img mt-4' alt="vision" src={require('../../img/galleri6.jpg')} style={{height:400}} />
+                </Container>
+            </Grid>
+            <Grid xs={12} sm={12} md={8} lg={8} xl={8}  order={{xs:1, sm:1, md:2, lg:2, xl:2}}>
+                <Container>
+                    <div className='produkt-tab-titel'>
+                      <h4 className='mt-4'>Build and simulate, at the same time!</h4>
+                    </div>
+                    <div className='produkt-tekst mt-4'>
+                        <p>Use physics-based construction to create molecules and assemblies.Model nanosystems through their structures, dynamics, interactions, visuals, and properties.</p>
+                        <p>Enable expert-in-the-loop design with interactive simulations.</p>
+                        <p>Export to large-scale simulators, and import trajectories to compute properties.</p>
+                    </div>
                 </Container>
             </Grid>
         </Grid>

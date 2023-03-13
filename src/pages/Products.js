@@ -24,13 +24,13 @@ function Products() {
                         <h2>Vores Projekt Forløb</h2>
                         <hr></hr>
                     </div>
-                    <Col className="" sm={12} md={12} lg={4} xl={4} style={{display: "flex", justifyContent: "end", alignItems: "center"}}>
+                    <Col className="" sm={{span:12, offset:0}} md={{span:4, offset:0}} lg={{span:3, offset:1}} xl={{span:3, offset:1}} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                         <div className="produkt-forløb-left text-center">
                             <h3 className="">Projekt Forløb Info</h3>
                             <Far/>
                         </div>
                     </Col>
-                    <Col sm={12} md={12} lg={8} xl={8}>
+                    <Col sm={12} md={8} lg={8} xl={8}>
                         <div className="produkt-forløb-right text-center">
                             <h3 className="">Projekt Forløb Proces</h3>
                             <Mor/>
