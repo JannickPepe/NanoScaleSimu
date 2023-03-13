@@ -74,22 +74,25 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={0}>
         <div className='produkt-tab-sektion-titel'>
           <h3 className='text-center mb-2'>A modern, feature-packed platform for molecular design</h3>
+          <hr></hr>
         </div>
         <Grid container>
             <Grid xs={12} sm={12} md={4} lg={4} xl={4} order={{xs:2, sm:2, md:1, lg:1, xl:1}}>
                 <Container>
-                <img rounded className='produkt-img mt-4' alt="vision" src={require('../../img/galleri6.jpg')} style={{height:400}} />
+                <img className='produkt-img mt-4 rounded' alt="vision" src={require('../../img/galleri6.jpg')} style={{height:350}} />
                 </Container>
             </Grid>
             <Grid xs={12} sm={12} md={8} lg={8} xl={8}  order={{xs:1, sm:1, md:2, lg:2, xl:2}}>
                 <Container>
-                    <div className='produkt-tab-titel'>
+                    <div className='produkt-tab-titel '>
                       <h4 className='mt-4'>Build and simulate, at the same time!</h4>
                     </div>
                     <div className='produkt-tekst mt-4'>
-                        <p>Use physics-based construction to create molecules and assemblies.Model nanosystems through their structures, dynamics, interactions, visuals, and properties.</p>
-                        <p>Enable expert-in-the-loop design with interactive simulations.</p>
-                        <p>Export to large-scale simulators, and import trajectories to compute properties.</p>
+                      <p>
+                          Use physics-based construction to create molecules and assemblies.<br/>
+                          Model nanosystems through their structures, dynamics, interactions, visuals, and properties.<br/><br/>
+                          Enable expert-in-the-loop design with interactive simulations.<br/>
+                          Export to large-scale simulators, and import trajectories to compute properties.</p>
                     </div>
                 </Container>
             </Grid>
@@ -98,23 +101,26 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={1}>
         <div className='produkt-tab-sektion-titel'>
           <h3 className='text-center mb-2'>A unique platform for science communication</h3>
+          <hr></hr>
         </div>
         <Grid container>
-            <Grid xs={12} sm={12} md={8} lg={8} xl={8}>
+            <Grid xs={12} sm={12} md={8} lg={8} xl={8} >
                 <Container>
-                    <div className='produkt-tab-titel'>
-                      <h4 className='mt-4 text-end'>Build and simulate, at the same time!</h4>
+                    <div className='produkt-tab-titel text-end'>
+                      <h4 className='mt-4'>Build and simulate, at the same time!</h4>
                     </div>
-                    <div className='produkt-tekst mt-4 text-end'>
-                        <p>Use physics-based construction to create molecules and assemblies.Model nanosystems through their structures, dynamics, interactions, visuals, and properties.</p>
-                        <p>Enable expert-in-the-loop design with interactive simulations.</p>
-                        <p>Export to large-scale simulators, and import trajectories to compute properties.</p>
+                    <div className='produkt-tekst text-end mt-4'>
+                        <p>
+                          Use physics-based construction to create molecules and assemblies.<br/>
+                          Model nanosystems through their structures, dynamics, interactions, visuals, and properties.<br/><br/>
+                          Enable expert-in-the-loop design with interactive simulations.<br/>
+                          Export to large-scale simulators, and import trajectories to compute properties.</p>
                     </div>
                 </Container>
             </Grid>
             <Grid xs={12} sm={12} md={4} lg={4} xl={4}>
-                <Container>
-                <img rounded className='produkt-img mt-4' alt="vision" src={require('../../img/galleri6.jpg')} style={{height:400}} />
+                <Container className='text-end'>
+                <img className='produkt-img mt-4 rounded' alt="vision" src={require('../../img/galleri6.jpg')} style={{height:350}} />
                 </Container>
             </Grid>
         </Grid>
@@ -122,11 +128,12 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={2}>
       <div className='produkt-tab-sektion-titel'>
           <h3 className='text-center mb-2'>A modern, feature-packed platform for molecular design</h3>
+          <hr></hr>
         </div>
         <Grid container>
             <Grid xs={12} sm={12} md={4} lg={4} xl={4} order={{xs:2, sm:2, md:1, lg:1, xl:1}}>
                 <Container>
-                <img rounded className='produkt-img mt-4' alt="vision" src={require('../../img/galleri6.jpg')} style={{height:400}} />
+                <img className='produkt-img mt-4 rounded' alt="vision" src={require('../../img/galleri6.jpg')} style={{height:350}} />
                 </Container>
             </Grid>
             <Grid xs={12} sm={12} md={8} lg={8} xl={8}  order={{xs:1, sm:1, md:2, lg:2, xl:2}}>
@@ -135,9 +142,11 @@ export default function VerticalTabs() {
                       <h4 className='mt-4'>Build and simulate, at the same time!</h4>
                     </div>
                     <div className='produkt-tekst mt-4'>
-                        <p>Use physics-based construction to create molecules and assemblies.Model nanosystems through their structures, dynamics, interactions, visuals, and properties.</p>
-                        <p>Enable expert-in-the-loop design with interactive simulations.</p>
-                        <p>Export to large-scale simulators, and import trajectories to compute properties.</p>
+                      <p>
+                          Use physics-based construction to create molecules and assemblies.<br/>
+                          Model nanosystems through their structures, dynamics, interactions, visuals, and properties.<br/><br/>
+                          Enable expert-in-the-loop design with interactive simulations.<br/>
+                          Export to large-scale simulators, and import trajectories to compute properties.</p>
                     </div>
                 </Container>
             </Grid>
