@@ -115,14 +115,64 @@ function Products() {
                         </Row>
                     </div>
                     <Row>
-                        <Col>
+                        <Col sm={12} md={8} lg={8} xl={8}>
                             <div className="prem-sektion">
-                                
+                                <div className="prem-sektion-titel text-center">
+                                    <h3>Premium versioner</h3>
+                                </div>
+                                <Row>
+                                    <Col sm={12} md={6} lg={6} xl={6}>
+                                        <div className="prem-one">
+                                            <Card>
+                                                <Card.Header>
+                                                    <Card.Title>
+                                                        <h5>Academic</h5>
+                                                    </Card.Title>
+                                                </Card.Header>
+                                                <Card.Body>
+                                                    <Card.Text>
+                                                        <p>Hello there</p>
+                                                    </Card.Text>
+                                                </Card.Body>
+                                            </Card>
+                                        </div>
+                                    </Col>
+                                    <Col  sm={12} md={6} lg={6} xl={6}>
+                                        <div className="prem-two">
+                                            <Card>
+                                                <Card.Header>
+                                                    <Card.Title>
+                                                        <h5>Researcher</h5>
+                                                    </Card.Title>
+                                                </Card.Header>
+                                                <Card.Body>
+                                                    <Card.Text>
+                                                        <p>Hello there</p>
+                                                    </Card.Text>
+                                                </Card.Body>
+                                            </Card>
+                                        </div>
+                                    </Col>
+                                </Row>
                             </div>
                         </Col>
-                        <Col>
+                        <Col sm={12} md={4} lg={4} xl={4}>
                             <div className="fri-sektion">
-
+                                <div className="fri-sektion-titel text-center">
+                                    <h3>Gratis version</h3>
+                                    <Card>
+                                                <Card.Header>
+                                                    <Card.Title>
+                                                        <h5>Fri version</h5>
+                                                    </Card.Title>
+                                                </Card.Header>
+                                                <Card.Body>
+                                                    <Card.Text>
+                                                        <p>Hello there</p>
+                                                    </Card.Text>
+                                                </Card.Body>
+                                            </Card>
+                                </div>
                             </div>
                         </Col>
                     </Row>
