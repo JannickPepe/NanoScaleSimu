@@ -1,4 +1,13 @@
 
+.hero-video h1{
+    padding:1%;
+}
+
+.hero-video h1 span{
+    color:#3C9FE1;
+    letter-spacing:2px;
+}
+
 video{
     object-fit: cover;
 }
@@ -30,6 +39,13 @@ video{
 
 .produkt-forløb-right h3{
     margin-bottom:4%;
+    color:#3C9FE1;
+    font-family:Montserrat;
+}
+
+.forløb-guide-komponent h4{
+    margin-top:12%;
+    margin-bottom:3%;
     color:#3C9FE1;
     font-family:Montserrat;
 }
@@ -66,5 +82,55 @@ video{
 
 
 
+.vide-mere-titel {
+    margin-top:7%;
+}
+
+.vide-mere-body{
+    margin-top:2%;
+    margin-bottom:5%;
+    background-color:#87CEFA;
+    width:600px;
+    border-radius: 84px 84px 84px 84px;
+    z-index:1;
+}
+
+.vide-mere-img{
+
+}
+
+.vide-mere-tekst{
+    margin-left:2%;
+    padding:1%;
+    z-index:99;
+    color:black;
+}
+
+.vide-mere-ekstra{
+
+}
+
+.vide-mere-ekstra p {
+    font-size:16px;
+}
+
+.vide-mere-ekstra a {
+    text-decoration:none;
+    text-style:none;
+}
+
+.vide-mere-ekstra p span:hover{
+    color:#3C9FE1;
+    font-size:18px;
+}
+
+.vide-mere-ekstra p span {
+    color:orange;
+}
 
 
+
+
+.ydelser-sektion{
+    margin-top:7%;
+}

@@ -74,7 +74,6 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={0}>
         <div className='produkt-tab-sektion-titel'>
           <h3 className='text-center mb-2'>A modern, feature-packed platform for molecular design</h3>
-          <hr></hr>
         </div>
         <Grid container>
             <Grid xs={12} sm={12} md={4} lg={4} xl={4} order={{xs:2, sm:2, md:1, lg:1, xl:1}}>
@@ -101,7 +100,6 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={1}>
         <div className='produkt-tab-sektion-titel'>
           <h3 className='text-center mb-2'>A unique platform for science communication</h3>
-          <hr></hr>
         </div>
         <Grid container>
             <Grid xs={12} sm={12} md={8} lg={8} xl={8} >
@@ -127,8 +125,7 @@ export default function VerticalTabs() {
       </TabPanel>
       <TabPanel value={value} index={2}>
       <div className='produkt-tab-sektion-titel'>
-          <h3 className='text-center mb-2'>A modern, feature-packed platform for molecular design</h3>
-          <hr></hr>
+          <h3 className='text-center mb-2'>VR And Molecyles With AR Technology</h3>
         </div>
         <Grid container>
             <Grid xs={12} sm={12} md={4} lg={4} xl={4} order={{xs:2, sm:2, md:1, lg:1, xl:1}}>

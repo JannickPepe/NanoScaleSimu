@@ -9,6 +9,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import VideoLabelIcon from '@mui/icons-material/VideoLabel';
 import StepConnector, { stepConnectorClasses } from '@mui/material/StepConnector';
+import SimpleBottomNavigation from './iconBar';
 
 
 
@@ -96,14 +97,19 @@ const steps = ['Installering af dit produkt', 'Hjælper dig med at indstillge ef
 
 export default function Mor() {
   return (
-    <Stack sx={{ width: '100%' }} spacing={4}>
-      <Stepper alternativeLabel activeStep={1} connector={<ColorlibConnector />}>
-        {steps.map((label) => (
-          <Step key={label}>
-            <StepLabel StepIconComponent={ColorlibStepIcon}>{label}</StepLabel>
-          </Step>
-        ))}
-      </Stepper>
-    </Stack>
+    <div className='forløb-guide-komponent'>
+      <Stack sx={{ width: '100%' }} spacing={4}>
+        <Stepper alternativeLabel activeStep={1} connector={<ColorlibConnector />}>
+          {steps.map((label) => (
+            <Step key={label}>
+              <StepLabel StepIconComponent={ColorlibStepIcon}>{label}</StepLabel>
+            </Step>
+          ))}
+        </Stepper>
+      </Stack>
+      <h4>Vide Mere, Så Se Her!</h4>
+      <SimpleBottomNavigation/>
+    </div>
+  
   );
 }
