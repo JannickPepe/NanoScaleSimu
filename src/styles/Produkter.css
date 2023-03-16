@@ -43,8 +43,8 @@ video{
     font-family:Montserrat;
 }
 
-.forløb-guide-komponent h4{
-    margin-top:12%;
+.forløb-guide-komponent h5{
+    margin-top:13%;
     margin-bottom:3%;
     color:#3C9FE1;
     font-family:Montserrat;
@@ -133,4 +133,45 @@ video{
 
 .ydelser-sektion{
     margin-top:7%;
+    margin-bottom:4%;
+    padding-left:2%;
+    padding-right:2%;
+}
+
+.ydelser-titel{
+    margin-bottom:2%;
+}
+
+.prem-sektion{
+    background-color:#F8F8FF;
+    padding:2%;
+    border-radius:20px 20px 20px 20px;
+}
+
+.prem-sektion-titel{
+    margin-bottom:4%
+}
+
+.prem-one{
+}
+
+.prem-two{
+
+}
+
+.fri-sektion{
+    background-color:#F0FFFF;
+    padding:4%;
+    border-radius:20px 20px 20px 20px;
+    margin-left:10%;
+}
+
+.fri-sektion-titel{
+    margin-bottom:7%;
+    margin-top:4%;
+}
+
+.fri-sektion-data{
+    padding-left:5%;
+    padding-right:5%;
 }

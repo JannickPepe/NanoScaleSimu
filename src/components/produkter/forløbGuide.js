@@ -107,7 +107,7 @@ export default function Mor() {
           ))}
         </Stepper>
       </Stack>
-      <h4>Vide Mere, Så Klik Her!</h4>
+      <h5>Vide Mere, Så Klik Her!</h5>
       <SimpleBottomNavigation/>
     </div>
   
