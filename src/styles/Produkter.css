@@ -144,26 +144,24 @@ video{
 
 .prem-sektion{
     background-color:#F8F8FF;
-    padding:2%;
+    padding:4%;
     border-radius:20px 20px 20px 20px;
 }
 
 .prem-sektion-titel{
-    margin-bottom:4%
+    margin-bottom:3%
 }
 
-.prem-one{
+.prem{
+    padding-left:4%;
+    padding-right:4%;
 }
 
-.prem-two{
-
-}
 
 .fri-sektion{
     background-color:#F0FFFF;
     padding:4%;
     border-radius:20px 20px 20px 20px;
-    margin-left:10%;
 }
 
 .fri-sektion-titel{
@@ -172,6 +170,6 @@ video{
 }
 
 .fri-sektion-data{
-    padding-left:5%;
-    padding-right:5%;
+    padding-left:7%;
+    padding-right:7%;
 }

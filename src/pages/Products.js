@@ -121,25 +121,24 @@ function Products() {
                                 <div className="prem-sektion-titel text-center">
                                     <h3>Premium versioner</h3>
                                 </div>
+
                                 <Row style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <Col sm={{span:12, offset:0}} md={{span:6, offset:0}} lg={{span:4, offset:0}} xl={{span:4, offset:0}}>
-                                        <div className="prem-one">
+                                    <Col sm={{span:12, offset:0}} md={{span:6, offset:0}} lg={{span:6, offset:0}} xl={{span:6, offset:0}}>
+                                        <div className="prem">
                                             <Card style={{borderTopRightRadius:20, borderTopLeftRadius:20}}>
                                                 <div className="bg-info" style={{height:15, borderTopRightRadius:20, borderTopLeftRadius:20}}></div>
-                                                <div className="prem-one-img text-center" style={{height:150, display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                                <div className="prem-img text-center" style={{height:150, display: "flex", justifyContent: "center", alignItems: "center"}}>
                                                     <Image roundedCircle alt="2pacShakur" src={require('../img/academic.jpg')} style={{height:130}}></Image>
                                                 </div>
-                                             
-                                                    <Card.Title className="text-center text-info">
-                                                        <h5>Academic</h5>
-                                                    </Card.Title>
-                                          
+                                                <Card.Title className="text-center text-info">
+                                                    <h5>Academic</h5>
+                                                </Card.Title>
                                                 <Card.Subtitle className="text-center mt-2">
                                                     <p>2 User Licenses</p>
                                                     <p>$299/6md</p>
                                                 </Card.Subtitle>
                                                 <Card.Text style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                                    <div className="bg-info" style={{height:3, width:200}}></div>
+                                                    <div className="bg-info" style={{height:3, width:250}}></div>
                                                 </Card.Text>
                                                 <Card.Body>
                                                 <ListGroup>
@@ -152,62 +151,66 @@ function Products() {
                                                 </ListGroup>
                                                 </Card.Body>
                                                 <Card.Body>
-                                                <div className="prem-two-policy text-center">
+                                                    <div className="prem-policy text-center">
                                                         <ListGroup >
                                                             <ListGroupItem className="text-secondary"><BsArrowRight/> For government and academic labs only</ListGroupItem>
                                                         </ListGroup>
                                                     </div>
                                                 </Card.Body>
-                                                <div className="prem-two-btn text-center mb-3">
+                                                <div className="prem-btn text-center mb-3">
                                                     <Button>Anmod om køb</Button>
                                                 </div>
                                             </Card>
                                         </div>
                                     </Col>
 
-                                    <Col sm={{span:12, offset:0}} md={{span:6, offset:0}} lg={{span:4, offset:1}} xl={{span:4, offset:1}}>
-                                        <div className="prem-two">
+                                    <Col sm={{span:12, offset:0}} md={{span:6, offset:0}} lg={{span:6, offset:0}} xl={{span:6, offset:0}}>
+                                        <div className="prem">
                                             <Card style={{borderTopRightRadius:20, borderTopLeftRadius:20}}>
-                                            <div className="bg-info" style={{height:15, borderTopRightRadius:20, borderTopLeftRadius:20}}></div>
-                                            <div className="prem-two-img text-center" style={{height:150, display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                                <Image roundedCircle alt="2pacShakur" src={require('../img/research.jpg')} style={{height:130}}></Image>
-                                            </div>
+                                                <div className="bg-info" style={{height:15, borderTopRightRadius:20, borderTopLeftRadius:20}}></div>
+                                                <div className="prem-img text-center" style={{height:150, display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                                    <Image roundedCircle alt="2pacShakur" src={require('../img/research.jpg')} style={{height:130}}></Image>
+                                                </div>
                                                 <Card.Title className="text-center text-info">
-                                                        <h5>Researcher</h5>
-                                                    </Card.Title>
+                                                    <h5>Research</h5>
+                                                </Card.Title>
                                                 <Card.Subtitle className="text-center mt-2">
                                                     <p>2 User Licenses</p>
                                                     <p>$299/6md</p>
                                                 </Card.Subtitle>
                                                 <Card.Text style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                                    <div className="bg-info" style={{height:3, width:200}}></div>
+                                                    <div className="bg-info" style={{height:3, width:250}}></div>
                                                 </Card.Text>
                                                 <Card.Body>
-                                                    <ListGroup>
-                                                        <ListGroupItem><BsDot/> structures from RCSB</ListGroupItem>
-                                                        <ListGroupItem><BsDot/>Host public workspaces</ListGroupItem>
-                                                        <ListGroupItem><BsDot/>Join public workspaces</ListGroupItem>
-                                                        <ListGroupItem><BsDot/>Basic molecular views</ListGroupItem>
-                                                        <ListGroupItem><BsDot/>Basic editing features</ListGroupItem>
-                                                        <ListGroupItem><BsDot/>Load up to 2 molecules at a time</ListGroupItem>
-                                                    </ListGroup>
+                                                <ListGroup>
+                                                    <ListGroupItem><BsDot/> structures from RCSB</ListGroupItem>
+                                                    <ListGroupItem><BsDot/>Host public workspaces</ListGroupItem>
+                                                    <ListGroupItem><BsDot/>Join public workspaces</ListGroupItem>
+                                                    <ListGroupItem><BsDot/>Basic molecular views</ListGroupItem>
+                                                    <ListGroupItem><BsDot/>Basic editing features</ListGroupItem>
+                                                    <ListGroupItem><BsDot/>Load up to 2 molecules at a time</ListGroupItem>
+                                                </ListGroup>
                                                 </Card.Body>
                                                 <Card.Body>
-                                                <div className="prem-two-policy text-center">
+                                                    <div className="prem-policy text-center">
                                                         <ListGroup >
-                                                            <ListGroupItem className="text-secondary"><BsArrowRight/> For non-commercial use only</ListGroupItem>
+                                                            <ListGroupItem className="text-secondary">
+                                                            <BsArrowRight/> For non-commercial use only</ListGroupItem>
                                                         </ListGroup>
                                                     </div>
                                                 </Card.Body>
-                                                <div className="prem-two-btn text-center mb-3">
+                                                <div className="prem-btn text-center mb-3">
                                                     <Button>Anmod om køb</Button>
                                                 </div>
                                             </Card>
                                         </div>
                                     </Col>
+
+
                                 </Row>
                             </div>
                         </Col>
+
                         <Col sm={{span:12, offset: 0}} md={{span: 4, offset: 0}} lg={{span: 4, offset:0}} xl={{span: 4, offset:0}}>
                             <div className="fri-sektion">
                                 <div className="fri-sektion-titel text-center">
@@ -219,38 +222,36 @@ function Products() {
                                         <div className="fri-img text-center" style={{height:150, display: "flex", justifyContent: "center", alignItems: "center"}}>
                                             <Image roundedCircle alt="2pacShakur" src={require('../img/free.jpg')} style={{height:140}}></Image>
                                         </div>
-                                        
-                                            <Card.Title className="text-center text-info">
-                                                <h5>Personal</h5>
-                                            </Card.Title>
-                                        
+                                        <Card.Title className="text-center text-info">
+                                            <h5>Personal</h5>
+                                        </Card.Title>
                                         <Card.Subtitle className="text-center mt-2">
-                                                    <p>2 User Licenses</p>
-                                                    <p>$299/6md</p>
-                                                </Card.Subtitle>
-                                                <Card.Text style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                                    <div className="bg-dark" style={{height:3, width:200}}></div>
-                                                </Card.Text>
-                                                <Card.Body>
-                                                    <ListGroup>
-                                                        <ListGroupItem><BsDot/> structures from RCSB</ListGroupItem>
-                                                        <ListGroupItem><BsDot/>Host public workspaces</ListGroupItem>
-                                                        <ListGroupItem><BsDot/>Join public workspaces</ListGroupItem>
-                                                        <ListGroupItem><BsDot/>Basic molecular views</ListGroupItem>
-                                                        <ListGroupItem><BsDot/>Basic editing features</ListGroupItem>
-                                                        <ListGroupItem><BsDot/>Load up to 2 molecules at a time</ListGroupItem>
-                                                    </ListGroup>
-                                                </Card.Body>
-                                                <Card.Body>
-                                                <div className="prem-two-policy text-center">
-                                                        <ListGroup >
-                                                            <ListGroupItem className="text-secondary"><BsArrowRight/> For students and schools</ListGroupItem>
-                                                        </ListGroup>
-                                                    </div>
-                                                </Card.Body>
-                                                <div className="prem-two-btn text-center mb-3">
-                                                    <Button>Anmod om køb</Button>
-                                                </div>
+                                            <p>2 User Licenses</p>
+                                            <p>$299/6md</p>
+                                        </Card.Subtitle>
+                                        <Card.Text style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                            <div className="bg-dark" style={{height:3, width:200}}></div>
+                                        </Card.Text>
+                                        <Card.Body>
+                                            <ListGroup>
+                                                <ListGroupItem><BsDot/> structures from RCSB</ListGroupItem>
+                                                <ListGroupItem><BsDot/>Host public workspaces</ListGroupItem>
+                                                <ListGroupItem><BsDot/>Join public workspaces</ListGroupItem>
+                                                <ListGroupItem><BsDot/>Basic molecular views</ListGroupItem>
+                                                <ListGroupItem><BsDot/>Basic editing features</ListGroupItem>
+                                                <ListGroupItem><BsDot/>Load up to 2 molecules at a time</ListGroupItem>
+                                            </ListGroup>
+                                        </Card.Body>
+                                        <Card.Body>
+                                            <div className="fri-policy text-center">
+                                                <ListGroup >
+                                                    <ListGroupItem className="text-secondary"><BsArrowRight/> For students and schools</ListGroupItem>
+                                                </ListGroup>
+                                            </div>
+                                        </Card.Body>
+                                        <div className="fri-btn text-center mb-3">
+                                            <Button>Anmod om køb</Button>
+                                        </div>
                                     </Card>
                                 </div>
                             </div>
