@@ -1,7 +1,7 @@
 function Projects() {
     return (
-        <div className="Projects">        
-            <h1>Projects</h1>
+        <div className="Project">        
+            <h1>Project B</h1>
         </div>
     );
 }

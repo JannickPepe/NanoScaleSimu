@@ -1,10 +1,10 @@
 figcaption {
     position:absolute;
-    bottom:20%;
+    bottom:15%;
     border-radius:20px 20px 20px 20px;
     background-color:white;
     text-align:center;
-    margin-left:36%;
+    margin-left:33%;
     padding: 2%;
     font-family:Montserrat;
 }
@@ -16,10 +16,10 @@ figcaption h1{
 
 .hero-icon-section{
     position:absolute;
-    bottom:2%;
+    bottom:1%;
     border-radius:84px 84px 84px 84px;
     color:white;
-    margin-left:47%;
+    margin-left:46%;
     text-align:center;
 
 }
@@ -32,7 +32,10 @@ figcaption h1{
 
 
 
-
+.vision-section{
+    margin-top:7%;
+    margin-bottom:7%;
+}
 
 .vision-brødtekst p{
     padding-left:5%;
@@ -45,6 +48,7 @@ figcaption h1{
 }
 
 .vision-værdi-sektion{
+    margin-top:7%;
 }
 
 .vision-værdi{
@@ -53,6 +57,11 @@ figcaption h1{
     outline-color: #3C9FE1;
     max-height:225px;
     padding:3%;
+}
+
+.vision-værdi:hover{
+    background-color:orange;
+    cursor:pointer;
 }
 
 
@@ -149,6 +158,11 @@ figcaption h1{
 
 
 
+
+.vores-projekter-sektion {
+    margin-top:7%;
+    margin-bottom:4%;
+}
 
 .vores-projekter-content a{
     color:white;

@@ -3,26 +3,62 @@ import React from 'react';
 import heroimg from "../img/bg_container1.png";
 import '../styles/About.css';
 
+import Scrollspy from 'react-scrollspy'
 import { motion } from "framer-motion";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Card, Image } from 'react-bootstrap';
+import { Button, ButtonGroup, Card, Image } from 'react-bootstrap';
 
 import ModalEmail from '../components/CTA/ModalEmail';
 import ScrollButton from '../components/CTA/ScrollButton';
 
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
-
 import styled, { keyframes } from 'styled-components';
 import { bounce } from 'react-animations';
+
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Popover from 'react-bootstrap/Popover';
+
 
 const bounceAnimation = keyframes`${bounce}`;
 
 const BouncyDiv = styled.div`
-    animation: 1s 4s 2 ${bounceAnimation};
+    animation: 1s 3s 2 ${bounceAnimation};
 `;
+
+
+const popover = (
+    <Popover id="popover-basic">
+        <Popover.Header as="h3">Popover right</Popover.Header>
+        <Popover.Body>
+            And here's some <strong>amazing</strong> content. It's very engaging.
+            right?
+        </Popover.Body>
+    </Popover>
+);
+
+const popoverTwo = (
+    <Popover id="popover-basic">
+        <Popover.Header as="h3">Molecules my G</Popover.Header>
+        <Popover.Body>
+            And here's some <strong>amazing</strong> content. It's very engaging.
+            right?
+        </Popover.Body>
+    </Popover>
+);
+
+const popoverThree = (
+    <Popover id="popover-basic">
+        <Popover.Header as="h3">Electron Binding</Popover.Header>
+        <Popover.Body>
+            And here's some <strong>amazing</strong> content. It's very engaging.
+            right?
+        </Popover.Body>
+    </Popover>
+);
+
 
 function About() {
     return (
@@ -39,8 +75,8 @@ function About() {
                             <motion.figcaption 
                                 animate={{ x: [0, 300, 0], opacity: 1, scale: 1 }}
                                 transition={{
-                                    duration: 3,
-                                    delay: 0.3,
+                                    duration: 2,
+                                    delay: 0.2,
                                     ease: [0.5, 0.71, 1, 1.5],
                                 }}
                                 initial={{ opacity: 0, scale: 0.5 }}
@@ -48,8 +84,25 @@ function About() {
                             >
                                 <h1 className=''>Information Omkring:</h1>
                                 <hr></hr>
-                                <h4 className=''>Vision, Projekter Og Om Os</h4>
-                                
+                                <Scrollspy items={ ['vision', 'hvem', 'projekter'] } currentClassName="is-current" >
+                                    <div className='hero-btn-group mt-4'>
+                                        <ButtonGroup className="me-2 shadow-lg" aria-label="First group" >
+                                            <motion.div whileHover={{ scale: 1.1}}>
+                                                <Button variant="outline-primary" className='shadow' size="lg" href='#vision' >Vision</Button>{' '}
+                                            </motion.div>
+                                        </ButtonGroup>
+                                        <ButtonGroup className="me-2" aria-label="Second group">
+                                            <motion.div whileHover={{ scale: 1.1}}>
+                                                <Button variant="outline-primary" className='shadow' size="lg" href='#hvem'>Hvem er vi</Button>{' '}
+                                            </motion.div>
+                                        </ButtonGroup>
+                                        <ButtonGroup className="me-4" aria-label="Third group">
+                                            <motion.div whileHover={{ scale: 1.1}}>
+                                                <Button variant="outline-primary" className='shadow' size="lg" href='#projekter'>Projekter</Button>{' '}
+                                            </motion.div>    
+                                        </ButtonGroup>
+                                    </div>
+                                </Scrollspy>
                             </motion.figcaption>
                             <div className='hero-icon-section' style={{}}>
                                 <BouncyDiv>
@@ -62,12 +115,14 @@ function About() {
                 </div>
 
 
-                <div className='vision-section my-4'>
+                <div className='vision-section' id="vision">
 
                     <Row>
                         <Col sm={12} md={12} lg={12} xl={12}>
                             <div className='vision-h2 text-center'>
                                 <h2>Vores Vision</h2>
+                                <h5 className='text-secondary' style={{marginTop:20}}>Læs Om Vores Spænende Vision for NanoScale</h5>
+                                <hr></hr>
                             </div>
                         </Col>
                     </Row>
@@ -91,15 +146,21 @@ function About() {
                                 </div>
 
                                 <div className='vision-værdi-sektion text-center p-4 mb-4'>
-                                    <div className='vision-værdi' style={{width:'28%', display:'inline-block'}}>
-                                        <Image className='w-75' alt="vision" src={require('../img/vr-glasses.png')}  />
-                                    </div>
-                                    <div className='vision-værdi' style={{width:'28%', display:'inline-block', marginLeft:20, marginRight:20}}>
-                                        <Image className='vision-img w-75' alt="vision" src={require('../img/research.png')}  />
-                                    </div>
-                                    <div className='vision-værdi' style={{width:'28%', display:'inline-block'}}>
-                                        <Image className='w-75' alt="vision" src={require('../img/molecules.png')}  />
-                                    </div>
+                                    <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
+                                        <div className='vision-værdi' style={{width:'20%', display:'inline-block'}}>
+                                            <Image className='w-75' alt="vision" src={require('../img/vr-glasses.png')}  />
+                                        </div>
+                                    </OverlayTrigger>
+                                    <OverlayTrigger trigger="click" placement="bottom" overlay={popoverTwo}>
+                                        <div className='vision-værdi' style={{width:'20%', display:'inline-block', marginLeft:20, marginRight:20}}>
+                                            <Image className='vision-img w-75' alt="vision" src={require('../img/research.png')}  />
+                                        </div>
+                                    </OverlayTrigger>
+                                    <OverlayTrigger trigger="click" placement="bottom" overlay={popoverThree}>
+                                        <div className='vision-værdi' style={{width:'20%', display:'inline-block'}}>
+                                            <Image className='w-75' alt="vision" src={require('../img/molecules.png')}  />
+                                        </div>
+                                    </OverlayTrigger>
                                 </div>
                             </Col>
                         </Row>
@@ -108,12 +169,14 @@ function About() {
                 </div>
 
 
-                <div className='hvem-sektion my-4'>
+                <div className='hvem-sektion my-4' id="hvem">
 
                     <Row>
                         <Col sm={12} md={12} lg={12} xl={12}>
                             <div className='hvem-sektion-h2 text-center'>
                                 <h2>Hvem er vi</h2>
+                                <h5 className='text-secondary' style={{marginTop:20}}>Læs Om Vores Rolle og Historie</h5>
+                                <hr></hr>
                             </div>
                         </Col>
                     </Row>
@@ -168,21 +231,19 @@ function About() {
                             </Col>
                         </Row>
 
-                        <hr></hr>
-
                     </Container>
                 </div>
 
 
 
-                <div className='vores-projekter-sektion my-4'>
-
+                <div className='vores-projekter-sektion' id="projekter">
                     <div className='vores-projekter-intro text-center my-4'>
                         <Row>
                             <Col>
                             <div className='vores-projekter-titel mt-4'>
                                 <h2>Vores Projekter</h2>
-                                <h5 style={{marginTop:20}}>Her Vil Du Se Vores Senete Projekter</h5>
+                                <h5 className='text-secondary' style={{marginTop:20}}>Her Vil Du Se Vores Senete Projekter</h5>
+                                <hr></hr>
                             </div>
                             </Col>
                         </Row>
