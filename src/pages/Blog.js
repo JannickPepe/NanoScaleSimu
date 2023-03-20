@@ -59,10 +59,11 @@ function Blog() {
                                         whileHover={{ scale: 1.1}}>
                                             {['sm'].map((breakpoint) => (
                                                 <ListGroup style={{display: "flex", justifyContent: "center", alignItems: "center", zIndex:2}} key={breakpoint} horizontal={breakpoint} className="my-2">
-                                                    <ListGroup.Item style={{borderRadius:20}}>
-                                                        <p>Læs Om Vores Platform I Ingeniøren</p>
+                                                    <ListGroup.Item style={{borderRadius:20, display: "flex", justifyContent: "start", alignItems: "center"}}>
+                                                    <Image alt="Article" src={require('../img/open-book.png')} style={{height
+                                                    :40}}/><p style={{marginLeft:8}}>Læs Om Vores Platform I Ingeniøren</p>
                                                     </ListGroup.Item>
-                                                    <div className='mx-4'>
+                                                    <div className='mx-2'>
                                                         <Button className='text-dark' href="#" size="lg" variant="outline-info">Klik Her</Button>{' '}
                                                     </div>
                                                 </ListGroup>
@@ -96,7 +97,7 @@ function Blog() {
 
 
                 <div className="blog-section-two pt-4 px-4">
-                    <Row>
+                    <Row className="g-4">
                         <Col xs={{span:12, offset:0}} md={{span:6, offset:0}} lg={{span:5, offset:1}} xl={{span:5, offset:1}} >
                             <div className='blog-section-two-cardone'>
                                 <RecipeReviewCard/>

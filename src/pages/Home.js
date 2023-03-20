@@ -185,7 +185,7 @@ function Home() {
 
                 <div className='text-dark my-4'>
                     <Row className='justify-content-center'>
-                        <Col sm={12} md={8} lg={6} xl={6}>
+                        <Col sm={12} md={8} lg={8} xl={8}>
                             <div className='text-center mt-4 mb-4'>
                                 <h2>FAQ</h2>
                                 <h5>Hos NanoScaleSimulation har vi lavet en QA, for at hjæpe med hurtige svar</h5>

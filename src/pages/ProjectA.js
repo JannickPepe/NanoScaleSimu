@@ -34,8 +34,8 @@ function Projects() {
                                 <ProgressBar variant="success" now={now} label={`${now}%`} style={{width:300, marginBottom:15}} />
                             <p>Afsluttet</p>
                             <h5>Tema</h5>
-                            <div className="projecta-intro-tema" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <Image alt="vision" src={require('../img/ar-glasses.png')} style={{height:60, marginTop:8, marginBottom:8}}/>
+                            <div className="projecta-intro-tema" style={{display: "flex", justifyContent: "start", alignItems: "center"}}>
+                                <Image alt="vision" src={require('../img/ar-glasses.png')} style={{height:60, marginTop:8, marginBottom:8, marginLeft:8}}/>
                                 <p>VR Teknologier</p>
                             </div>
                             <hr></hr>
