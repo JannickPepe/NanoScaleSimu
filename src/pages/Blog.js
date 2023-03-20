@@ -63,7 +63,7 @@ function Blog() {
                                                         <p>Læs Om Vores Platform I Ingeniøren</p>
                                                     </ListGroup.Item>
                                                     <div className='mx-4'>
-                                                        <Button className='text-dark' href="#" size="lg" variant="light">Klik Her</Button>{' '}
+                                                        <Button className='text-dark' href="#" size="lg" variant="outline-info">Klik Her</Button>{' '}
                                                     </div>
                                                 </ListGroup>
                                             ))}
