@@ -39,7 +39,7 @@ function ModalOne() {
                                 }
                                 title={
                                     <Typography sx={{ fontSize: 14, color:'#3C9FE1' }}>
-                                        September 14, 2016
+                                        Jens Bäckvall, PM @ Hololink<br/> NOVEMBER 15, 2022
                                     </Typography>
                                         
                                 }

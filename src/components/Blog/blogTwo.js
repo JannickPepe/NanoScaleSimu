@@ -69,9 +69,9 @@ export default function RecipeReviewCardTwo() {
                     </Typography>
                     <Box sx={{ m: 2 , pt:1}}>
                         <Stack direction="row" spacing={1}>
-                        <Chip color="secondary" label="VR" />
+                        <Chip label="VR" />
                         <Chip color="primary" label="Kemi" />
-                        <Chip color="secondary" label="AR" />
+                        <Chip label="AR" />
                         <Chip color="primary" label="Tech" />
                         </Stack>
                     </Box>
