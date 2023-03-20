@@ -25,46 +25,52 @@ function Blog() {
                 <div className="hero-section-blog">
                     <Row>
                         <Col xs={12} sm={12} md={8} lg={8} xl={8}>
-                            <Card className='shadow-lg' style={{borderRadius:30}}>
-                                <Card.Body>
-                                    <div className="hero-title-blog">
-                                    <motion.div
-                                        animate={{ x: [1, 50, 1], opacity: 1, scale: 1 }}
-                                        transition={{
-                                            duration: 2,
-                                            delay: 0.2,
-                                            ease: [0.5, 0.71, 1, 1.5],
-                                        }}
-                                        initial={{ opacity: 0, scale: 0.5 }}
-                                    >
-                                        <h1>Er Du Nysgerrig Efter Hvad Vi Har Lavet?</h1>
-                                        </motion.div>
-                                    </div>
-                                    <div className="hero-mellemtitel-blog">
-                                    <motion.div
-                                        animate={{ x: [1, 50, 1], opacity: 1, scale: 1 }}
-                                        transition={{
-                                            duration: 2,
-                                            delay: 0.2,
-                                            ease: [0.5, 0.71, 1, 1.5],
-                                        }}
-                                        initial={{ opacity: 0, scale: 0.5 }}
-                                    >
-                                        <h3>Her Hos NanoScaleSolutions - Har Vi Spændende Blogs Klar!</h3>
-                                        </motion.div>
-                                    </div>
-                                    <div className="hero-tekst-blog mt-4">
+                            <Card className='shadow-lg' style={{borderRadius:20}}>
+                            
+                                    <div className='hero-blog' style={{zIndex:99}}>
+                                        <div className="hero-title-blog">
+                                        <motion.div
+                                            animate={{ x: [1, 50, 1], opacity: 1, scale: 1 }}
+                                            transition={{
+                                                duration: 2,
+                                                delay: 0.2,
+                                                ease: [0.5, 0.71, 1, 1.5],
+                                            }}
+                                            initial={{ opacity: 0, scale: 0.5 }}
+                                        >
+                                            <h1>Er Du Nysgerrig Efter Hvad Vi Har Lavet?</h1>
+                                            </motion.div>
+                                        </div>
+                                        <div className="hero-mellemtitel-blog">
+                                        <motion.div
+                                            animate={{ x: [1, 50, 1], opacity: 1, scale: 1 }}
+                                            transition={{
+                                                duration: 2,
+                                                delay: 0.2,
+                                                ease: [0.5, 0.71, 1, 1.5],
+                                            }}
+                                            initial={{ opacity: 0, scale: 0.5 }}
+                                        >
+                                            <h3>Her Hos NanoScaleSolutions - Har Vi Spændende Blogs Klar!</h3>
+                                            </motion.div>
+                                        </div>
+                                        <div className="hero-tekst-blog mt-4">
                                         <motion.div
                                         whileHover={{ scale: 1.1}}>
                                             {['sm'].map((breakpoint) => (
-                                                <ListGroup style={{display: "flex", justifyContent: "center", alignItems: "center"}} key={breakpoint} horizontal={breakpoint} className="my-2">
-                                                <ListGroup.Item style={{borderRadius:20}}><p>Læs Om Vores Platform I Ingeniøren</p></ListGroup.Item>
-                                                <ListGroup.Item style={{border:'none'}}><Button className='text-light' href="#" size="lg" variant="info">Klik Her</Button>{' '}</ListGroup.Item>
+                                                <ListGroup style={{display: "flex", justifyContent: "center", alignItems: "center", zIndex:2}} key={breakpoint} horizontal={breakpoint} className="my-2">
+                                                    <ListGroup.Item style={{borderRadius:20}}>
+                                                        <p>Læs Om Vores Platform I Ingeniøren</p>
+                                                    </ListGroup.Item>
+                                                    <div className='mx-4'>
+                                                        <Button className='text-dark' href="#" size="lg" variant="light">Klik Her</Button>{' '}
+                                                    </div>
                                                 </ListGroup>
                                             ))}
                                         </motion.div>
                                     </div>
-                                </Card.Body>
+                                    </div>
+                            
                             </Card>
                         </Col>
                         <Col xs={12} sm={12} md={4} lg={4} xl={4}> 

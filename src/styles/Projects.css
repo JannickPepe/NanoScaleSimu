@@ -1,0 +1,55 @@
+
+.projecta{
+
+}
+
+.projecta-section-title{
+    margin-top:4%;
+    margin-bottom:2%;
+}
+
+.projecta-section-intro{
+    background: rgb(255,255,255);
+    background: linear-gradient(54deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 52%, rgba(128,128,128,1) 100%);
+}
+
+.projecta-section-intro h5{
+    padding-top:4%;
+    font-family:Montserrat;
+    font-weight:bold;   
+}
+
+.projecta-img{
+
+}
+
+.projecta-intro-tema{
+    background-color:#3C9FE1;
+    max-width:220px;
+    border-radius:10px;
+}
+
+.projecta-intro-tema p{
+    margin-left:4%;
+    color:white;    
+}
+
+.projecta-intro-slut{
+    max-width:450px;
+}
+
+.projecta-intro-slut p{
+    margin-top:2%;  
+}
+
+.projecta-metode-effekt-section{
+    margin-top:7%;
+}
+
+.projecta-data{
+
+}
+
+.projecta-contact{
+
+}
