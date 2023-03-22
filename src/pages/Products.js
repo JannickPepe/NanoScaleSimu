@@ -157,8 +157,8 @@ function Products() {
                                                         </ListGroup>
                                                     </div>
                                                 </Card.Body>
-                                                <div className="prem-btn text-center mb-3">
-                                                    <Button>Anmod om køb</Button>
+                                                <div className="product-btn text-center mb-3">
+                                                    <Button className="prem-btn" style={{}}>Anmod om køb</Button>
                                                 </div>
                                             </Card>
                                         </div>
@@ -199,8 +199,8 @@ function Products() {
                                                         </ListGroup>
                                                     </div>
                                                 </Card.Body>
-                                                <div className="prem-btn text-center mb-3">
-                                                    <Button>Anmod om køb</Button>
+                                                <div className="product-btn text-center mb-3">
+                                                    <Button className="prem-btn" style={{}}>Anmod om køb</Button>
                                                 </div>
                                             </Card>
                                         </div>
@@ -249,8 +249,8 @@ function Products() {
                                                 </ListGroup>
                                             </div>
                                         </Card.Body>
-                                        <div className="fri-btn text-center mb-3">
-                                            <Button>Anmod om køb</Button>
+                                        <div className="product-btn text-center mb-3">
+                                            <Button className="fri-btn" style={{}}>Anmod om køb</Button>
                                         </div>
                                     </Card>
                                 </div>

@@ -136,7 +136,7 @@ function Projects() {
                                     </p>
                                     <div className="projecta-rapport-link mx-2 p-2">
                                         <li>Læs om den afsluttende rapport her: </li>
-                                        <Button href="google.com" className="projecta-rapport-btn mx-4 mt-2" variant="primary" size="sm">Rapport Link</Button>
+                                        <Button href="google.com" className="projecta-rapport-btn mx-4 mt-3" variant="primary" size="sm">Rapport Link</Button>
                                     </div>
                                 </div>
                             </div>

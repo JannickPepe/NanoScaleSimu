@@ -85,18 +85,18 @@ function About() {
                                 <h1 className=''>Information Omkring:</h1>
                                 <hr></hr>
                                 <Scrollspy items={ ['vision', 'hvem', 'projekter'] } currentClassName="is-current" >
-                                    <div className='hero-btn-group mt-4'>
-                                        <ButtonGroup className="me-2 shadow-lg" aria-label="First group" >
+                                    <div className='hero-btn-group mt-4 g-4'>
+                                        <ButtonGroup className="about-btn btn-sm red me-2 shadow-sm" aria-label="First group" >
                                             <motion.div whileHover={{ scale: 1.1}}>
                                                 <Button variant="outline-primary" className='shadow' size="lg" href='#vision' >Vision</Button>{' '}
                                             </motion.div>
                                         </ButtonGroup>
-                                        <ButtonGroup className="me-2" aria-label="Second group">
+                                        <ButtonGroup className="about-btn btn-sm red me-2 shadow-sm" aria-label="Second group">
                                             <motion.div whileHover={{ scale: 1.1}}>
                                                 <Button variant="outline-primary" className='shadow' size="lg" href='#hvem'>Hvem er vi</Button>{' '}
                                             </motion.div>
                                         </ButtonGroup>
-                                        <ButtonGroup className="me-4" aria-label="Third group">
+                                        <ButtonGroup className="about-btn btn-sm red me-4 shadow-sm" aria-label="Third group">
                                             <motion.div whileHover={{ scale: 1.1}}>
                                                 <Button variant="outline-primary" className='shadow' size="lg" href='#projekter'>Projekter</Button>{' '}
                                             </motion.div>    

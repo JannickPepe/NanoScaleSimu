@@ -30,6 +30,56 @@ figcaption h1{
 
 
 
+.about-btn{
+    border: none;
+    position: relative;
+}
+.about-btn:hover{
+    color: #fff;
+}
+.about-btn:after{
+    content: "";
+    width: 0;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+    transition: all 0.35s ease 0s;
+}
+.about-btn:hover:after{
+    width: 100%;
+}
+.about-btn.btn-sm{
+    padding-bottom: 10px;
+   
+}
+.about-btn.btn-sm:after{
+    height: 8px;
+}
+.about-btn.btn-xs{
+    padding-bottom: 8px;
+   
+}
+.about-btn.btn-xs:after{
+    height: 6px;
+}
+.about-btn.red:after{
+    background: #ff6e6e;
+}
+.about-btn.blue:after{
+    background: #5cbcf6;
+}
+.about-btn.orange:after{
+    background: #ef965c;
+}
+.about-btn.green:after{
+    background: #7ad79a;
+}
+@media only  screen and (max-width: 767px){
+    .about-btn{ margin-bottom: 20px; }
+}
+
 
 
 .vision-section{

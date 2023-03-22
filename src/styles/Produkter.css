@@ -173,3 +173,27 @@ video{
     padding-left:7%;
     padding-right:7%;
 }
+
+
+
+.product-btn button{
+    color: black;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0.25em, transparent 0.25em) center/1em 1.2em;
+    font-family: 'Robotto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    
+    border: 2px solid #3C9FE1;
+    transition: all 0.5s ease 0s;
+    }
+    .product-btn button:hover,
+    .product-btn button:focus{
+    color: white;
+    background: radial-gradient(circle, #3C9FE1 0.25em, transparent 0.25em) center/0.1em 0.1em;
+    box-shadow: 4px 4px black;
+    }
+    @media only screen and (max-width: 767px){
+    .product- button{ margin-bottom: 20px; }
+    }

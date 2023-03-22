@@ -40,8 +40,8 @@ function Home() {
                                     <motion.div
                                         animate={{ x: [1, 50, 1], opacity: 1, scale: 1 }}
                                         transition={{
-                                            duration: 3,
-                                            delay: 0.3,
+                                            duration: 2,
+                                            delay: 0.2,
                                             ease: [0.5, 0.71, 1, 1.5],
                                         }}
                                         initial={{ opacity: 0, scale: 0.5 }}
@@ -53,8 +53,8 @@ function Home() {
                                 <motion.div
                                     animate={{ x: [5, 95, 5], opacity: 1, scale: 1 }}
                                     transition={{
-                                        duration: 3,
-                                        delay: 0.3,
+                                        duration: 2,
+                                        delay: 0.2,
                                         ease: [0.5, 0.71, 1, 1.5],
                                     }}
                                     initial={{ opacity: 0, scale: 0.5 }}
@@ -64,8 +64,8 @@ function Home() {
                                     </p>
                                 </motion.div>
                                 </div>
-                                <div className='hero-btn mt-4 px-4 pt-4'>
-                                    <button type="button" class="btn btn-primary btn-lg">VORES PRODUKTER</button>
+                                <div className='hero-btn-body px-4 mx-2 my-4 pt-4 pb-2'>
+                                    <Button className="hero-btn" variant="primary" size="lg" style={{borderRadius:30, maxWidth:280, width:280,}}>VORES PRODUKTER</Button>
                                 </div>
                                 <div className='hero-link mt-4 mx-2 mb-4'>
                                     <i className="fa fa-envelope px-2"></i><Card.Link href="#">Læs Om Vores Platform I Ingeniøren</Card.Link>
@@ -111,8 +111,8 @@ function Home() {
                                         With supporting text below as a natural lead-in to additional content.
                                         With supporting text below as a natural lead-in to additional content.
                                         </Card.Text>
-                                        <Card.Text className='text-center'>
-                                            <p>Læs Mere Om Vores VR Platform? <Button variant="primary">Klik her</Button></p>
+                                        <Card.Text className='product-btn text-center'>
+                                            <p>Læs Mere Om Vores VR Platform? <Button className='mx-2' variant="primary">Klik her</Button></p>
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
