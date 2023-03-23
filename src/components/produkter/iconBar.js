@@ -14,18 +14,20 @@ export default function SimpleBottomNavigation() {
     const [value, setValue] = React.useState();
 
     return (
-        <Box sx={{  }}>
-            <BottomNavigation
-            showLabels
-            value={value}
-            onChange={(event, newValue) => {
-                setValue(newValue);
-            }}
-            >
-                <BottomNavigationAction label="Blogs" icon={<BookIcon />} />
-                <BottomNavigationAction label="Projekter" icon={<AssignmentIcon />} />
-                <BottomNavigationAction label="Hvem er vi" icon={<InfoIcon />} />
-            </BottomNavigation>
-        </Box>
+        <div className=''>
+            <Box sx={{}}>
+                <BottomNavigation
+                showLabels
+                value={value}
+                onChange={(event, newValue) => {
+                    setValue(newValue);
+                }}
+                >
+                    <BottomNavigationAction className=' rounded'label="Blogs" icon={<BookIcon />} style={{backgroundColor:'#3C9FE1', color:'white'}}/>
+                    <BottomNavigationAction className=' rounded mx-2' label="Projekter" icon={<AssignmentIcon />} style={{backgroundColor:'#3C9FE1', color:'white'}} />
+                    <BottomNavigationAction className=' rounded' label="Hvem er vi" icon={<InfoIcon />} style={{backgroundColor:'#3C9FE1', color:'white'}}/>
+                </BottomNavigation>
+            </Box>
+        </div>
     );
 }

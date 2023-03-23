@@ -5,6 +5,7 @@ import Mor from '../components/produkter/forløbGuide'
 import Far from "../components/produkter/forløbInfo";
 import VerticalTabs from "../components/produkter/produktSektion";
 import { BsDot, BsArrowRight } from "react-icons/bs";
+import SimpleBottomNavigation from "../components/produkter/iconBar";
 
 
 
@@ -16,13 +17,35 @@ function Products() {
                 <Row>
                     <Col sm={12} md={12} lg={12} xl={12}>
                         <div className='hero-video text-center'>
-                            <h1>Discover <span>NanoScale</span>, your integrated platform for molecular </h1>
-                            <HeroVideo/>
+                            <div class="row my-4 mb-lg-5">
+                                <div class="col-lg-9 mx-auto text-center">
+                                    <div class="lc-block mb-4">
+                                        <div editable="rich">
+                                            <h1 class="display-3">Discover <span style={{color:'#3C9FE1'}}>NanoScale</span><br/>
+                                            Your integrated platform for molecular</h1>
+                                        </div>
+                                    </div>
+
+                                    <div class="lc-block mb-2">
+                                        <div editable="rich">
+                                            <p class="text-muted lead">Med vores gennemførende VR teknologi, vil alt indlæring være muligt!</p>
+                                        </div>
+                                    </div>
+                                    <div class="lc-block d-grid d-lg-block gap-2 mt-4 py-2">
+                                        <SimpleBottomNavigation/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-2 ">
+                                <div class="col-12 mx-auto text-center">
+                                <HeroVideo/>
+                                </div>
+                            </div>
                         </div>
                     </Col>
                 </Row>
     
-                <Row className="">
+                <Row>
                     <div className="produkt-forløb-titel text-center">
                         <h2>Vores Projekt Forløb</h2>
                         <hr></hr>
@@ -70,37 +93,49 @@ function Products() {
                         </Col>
                     </Row>
 
-                    <Container>
-                        <Row style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                            <Col sm={12} md={9} lg={9} xl={9} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <div className="vide-mere-body" style={{display: "flex", justifyContent: "start", alignItems: "center"}}>
-                                    <div className="vide-mere-img" style={{}}>
-                                        <Image roundedCircle alt="vision" src={require('../img/galleri6.jpg')} style={{height:130}} />
-                                    </div>
-                                    <div className="vide-mere-tekst" style={{}}>
-                                        <Card.Body>
-                                            <Card.Title>
-                                                <h4>Project XY, At Roskilde campus</h4>
-                                            </Card.Title>
-                                            <Card.Link href="/projekter">
-                                                Læs mere
-                                            </Card.Link>
-                                        </Card.Body>
+                    <div class="container p-5 bg-light">
+                        <div class="row">
+                            <div class="col-md-4 text-center align-self-center">
+                                <div class="lc-block border-end border-2 ">
+                                    <div editable="rich">
+                                        <p class="display-4 text-secondary">Project XY</p>
+                                        <div className="" style={{}}>
+                                            <Image roundedCircle alt="vision" src={require('../img/galleri6.jpg')} style={{height:180}} />
+                                        </div>
                                     </div>
                                 </div>
-                            </Col>
-                        </Row>
-                        
+                            </div>
+                            <div class="col-md-8">
+                                <div class="lc-block ">
+                                    <div editable="rich">
+                                        <p class="display-4" style={{color:'#3C9FE1'}}>Showcase our Project XY in Zealand Campus, Roskilde</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-9 offset-md-1">
+                                <div class="lc-block mt-5">
+                                    <div editable="rich">
+                                        <p class="lead text-secondary"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat. In pellentesque scelerisque auctor.&nbsp;</p>
+                                    </div>
+                                </div>
+                                <Card.Link className="text-center" href="/projekter">
+                                    <p>Læs mere</p>
+                                </Card.Link>
+                            </div>
+                        </div>
+
                         <Row>
-                            <Col>
-                                <div className="vide-mere-ekstra text-center" style={{}}>
-                                    <p style={{fontWeight:'bold'}}>Er du ikke helt sikker på hvad vores projekter kan udføre? </p>
+                            <Col style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                <div className="vide-mere-ekstra text-center mt-4 pt-2" style={{backgroundColor:'white', padding:10, maxWidth:600, borderRadius:30}}>
+                                    <p style={{fontWeight:'bold', padding:10}}>Er du ikke helt sikker på hvad vores projekter kan udføre? </p>
                                     <p>Få afklaret dine svar her: <a href="/about"><span>Schedule a live demo.</span></a></p>
                                 </div>
                             </Col>
                         </Row>
-                        
-                    </Container>
+                    </div>      
                 </div>
 
 

@@ -9,7 +9,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import VideoLabelIcon from '@mui/icons-material/VideoLabel';
 import StepConnector, { stepConnectorClasses } from '@mui/material/StepConnector';
-import SimpleBottomNavigation from './iconBar';
+
 
 
 
@@ -107,8 +107,6 @@ export default function Mor() {
           ))}
         </Stepper>
       </Stack>
-      <h5>Vide Mere, Så Klik Her!</h5>
-      <SimpleBottomNavigation/>
     </div>
   
   );

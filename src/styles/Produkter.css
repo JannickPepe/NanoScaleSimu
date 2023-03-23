@@ -54,7 +54,7 @@ video{
 
 
 .produkt-sektion-titel h2{
-    margin-top:7%;
+    margin-top:5%;
     font-family:Montserrat;
 }
 
@@ -197,3 +197,4 @@ video{
     @media only screen and (max-width: 767px){
     .product- button{ margin-bottom: 20px; }
     }
+
