@@ -2,7 +2,7 @@
 import { db } from "../../db/firebaseConfig";
 import React, { useState, useEffect } from 'react';
 import { collection, getDocs } from "firebase/firestore";
-import { Card, Col, Row } from "react-bootstrap";
+import { Card, Col, Image, Row } from "react-bootstrap";
 
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
@@ -30,38 +30,41 @@ const Scientist = () => {
 
     
     return (
-        <Row xs={1} md={1} lg={3} xl={3} className="g-4 px-4 mx-4">
+        <div className="scientist-component">
+            <Row  xs={1} md={1} lg={3} xl={3} className="g-4 px-4 mx-4">
             {
                 scientist?.map((science, i)=>(
-                    <Col style={{position: 'relative', paddingTop:45, paddingBottom:20}} key={i}>
-                        <Card className="shadow-lg" style={{borderRadius:20, display: "flex", justifyContent: "center", alignItems: "center", height:400}} border="info mx-4">
-                            <Card.Img style={{width:180, height:150, position: 'absolute', bottom:320}} className="rounded-circle p-4" variant="top" src={science.image} alt="Description"/>
-                            <div className="scientist-info">
-                                <Card.Title className="text-center" style={{position: 'relative', top: 40}}><h3>{science.navn}</h3></Card.Title>
-                                <hr style={{position: 'relative', top: 40}}></hr>
-                                <Card.Body style={{position: 'relative', top: 30}}>
-                                    <Card.Title><h4>{science.titel}</h4></Card.Title>
-                                    <Card.Text>
-                                        <div className="" style = {{display:"flex", alignItems: "center", justifyContent:"end"}}>
-                                            < FaQuoteRight  style={{display:"flex", alignItems: "center", justifyContent:"end", margin: '0px'}} size={20}/>
-                                        </div>
-                                        <p>{science.tekst}</p>
-                                        < FaQuoteLeft size={20}/>
-                                    </Card.Text>
-                                </Card.Body>
-                                <div className="scientistcard-link">
-                                        <Card.Link href="#" style={{ display: "flex", justifyContent: "center", alignItems: "center",backgroundColor: "#3C9FE1", padding:5, borderBottomLeftRadius:20, borderBottomRightRadius:20 ,position: "relative", top:33}} >
-                                            Læs Mere
-                                        </Card.Link>
-                                </div>
+                <Col className="pb-3">
+                    <Card className="card-custom bg-white border-white border-0 shadow-lg" style={{borderRadius:20, height:550}} border="info mx-2">
+                        <div className="card-custom-img" style={{backgroundImage:`url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg)`}}></div>
+                        <div class="card-custom-avatar">
+                            <Image className="img-fluid" src={science.image} alt="Avatar"/>
+                        </div>
+                        <Card.Body className="" style={{overflowY: 'auto'}}>
+                            <Card.Title>
+                                <h4 className="">{science.navn}</h4>
+                                <h5 className="">{science.titel}</h5>
+                            </Card.Title>
+                            <hr></hr>
+                            <div className="" style = {{display:"flex", alignItems: "center", justifyContent:"end"}}>
+                                < FaQuoteRight  style={{display:"flex", alignItems: "center", justifyContent:"end", margin: '0px', marginBottom:10}} size={20}/>
                             </div>
-                        </Card>
-                    </Col>
+                            <Card.Text>
+                                <p className="">{science.tekst}</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                            </Card.Text>
+                            < FaQuoteLeft size={20}/>
+                        </Card.Body>
+                        <Card.Footer className="text-center" style={{background:'linear-gradient(305deg, rgba(44,106,148,1) 0%, rgba(14,159,255,1) 50%, rgba(60,159,225,1) 100%)', borderColor:'inherit'}}>
+                            <a href="/" className="btn btn-outline-light p-2 my-1">Læs mere</a>
+                        </Card.Footer>
+                    </Card>
+                </Col>
                 ))
             }
-        </Row>
+            </Row>
+        </div>
     );
-
 }
 
 export default Scientist;

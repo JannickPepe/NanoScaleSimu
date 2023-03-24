@@ -95,12 +95,12 @@ function Products() {
 
                     <div class="container p-5 bg-light">
                         <div class="row">
-                            <div class="col-md-4 text-center align-self-center">
-                                <div class="lc-block border-end border-2 ">
+                            <div class="col-md-4 align-self-center">
+                                <div class="lc-block border-end border-2">
                                     <div editable="rich">
-                                        <p class="display-4 text-secondary">Project XY</p>
-                                        <div className="" style={{}}>
-                                            <Image roundedCircle alt="vision" src={require('../img/galleri6.jpg')} style={{height:180}} />
+                                        <p class="display-4 text-dark text-center">Project XY</p>
+                                        <div className="text-center">
+                                            <Image roundedCircle alt="vision" src={require('../img/galleri6.jpg')} style={{height:200}} />
                                         </div>
                                     </div>
                                 </div>
@@ -121,15 +121,14 @@ function Products() {
                                         <p class="lead text-secondary"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat. In pellentesque scelerisque auctor.&nbsp;</p>
                                     </div>
                                 </div>
-                                <Card.Link className="text-center" href="/projekter">
+                                <Card.Link className="text-start" href="/projekter">
                                     <p>Læs mere</p>
                                 </Card.Link>
                             </div>
                         </div>
-
                         <Row>
                             <Col style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <div className="vide-mere-ekstra text-center mt-4 pt-2" style={{backgroundColor:'white', padding:10, maxWidth:600, borderRadius:30}}>
+                                <div className="vide-mere-ekstra text-center mt-4 pt-4 pb-4" style={{backgroundColor:'white', padding:10, maxWidth:600, borderRadius:30}}>
                                     <p style={{fontWeight:'bold', padding:10}}>Er du ikke helt sikker på hvad vores projekter kan udføre? </p>
                                     <p>Få afklaret dine svar her: <a href="/about"><span>Schedule a live demo.</span></a></p>
                                 </div>
